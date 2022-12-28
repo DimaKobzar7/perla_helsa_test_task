@@ -14,6 +14,12 @@
   color: #ffffff;
 
   text-align: center;
+
+  border-radius: 40px;
+
+  outline: none;
+
+  border: none;
 }
 
 .btn--success {

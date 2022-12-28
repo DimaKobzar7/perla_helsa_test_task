@@ -14,6 +14,10 @@
             <p class="card__instruction card__instruction--standard">120 капсул по 500 мг</p>
             <p class="card__instruction card__instruction--disabled">1 місяць прийому</p>
           </div>
+          <div class="card__price">
+            <span class="card__old-price">963 ₴</span>
+            <span class="card__current-price">489 ₴</span>
+          </div>
         </div>
         <TheCounter />
         <TheButton />
@@ -75,5 +79,29 @@
 
 .card__instruction--disabled {
   opacity: 0.4;
+}
+
+.card__price {
+  /* возможно эта обертка не нужна если в колонки удастся посадить */
+}
+
+.card__old-price {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 36px;
+
+  color: rgba(0, 40, 79, 0.3);
+
+  text-align: center;
+
+  letter-spacing: -0.03em;
+}
+
+.card__current-price {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
+
+  color: #00284f;
 }
 </style>
