@@ -12,6 +12,7 @@
         <!-- <NuxtWelcome /> -->
         <TheHeader />
         <TheCard />
+        <TheDelivery />
       </div>
     </section>
   </main>
