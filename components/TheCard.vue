@@ -3,11 +3,17 @@
   <section class="section">
     <div class="container">
       <div class="card">
-        <h1>Омега-3 <span>Тріска</span></h1>
-        <span>з вітамінами А і D3</span>
+        <h1 class="card__title">Омега-3 <span class="card__subtitle">Тріска</span></h1>
+        <div class="card__label">з вітамінами А і D3</div>
         <!-- тут должны быть табы -->
         <div class="card__info">
-          <img src="../assets/svg/drug-green.svg" alt="" />
+          <img class="card__icon" src="../assets/svg/drug-green.svg" alt="" />
+          <!-- может тут все надо поместить в 1 тег -->
+          <div class="card__inner">
+            <h5 class="card__instruction card__instruction--title">В упаковці:</h5>
+            <p class="card__instruction card__instruction--standard">120 капсул по 500 мг</p>
+            <p class="card__instruction card__instruction--disabled">1 місяць прийому</p>
+          </div>
         </div>
         <TheCounter />
         <TheButton />
@@ -16,4 +22,58 @@
   </section>
 </template>
 
-<style></style>
+<style>
+.card__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+
+  color: #00284f;
+}
+
+.card__subtitle {
+  font-weight: 300;
+  /* font-size: 40px;
+  line-height: 51px;
+
+  color: #00284f; */
+}
+
+.card__label {
+  padding: 8px 0;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+
+  text-align: center;
+
+  color: #00284f;
+
+  background: #ffffff;
+  border-radius: 50px;
+}
+.card__info {
+  display: flex;
+}
+
+.card__icon {
+  margin-right: 32px;
+}
+
+.card__instruction {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.28;
+
+  color: #00284f;
+}
+
+.card__instruction--standard {
+  font-weight: 500;
+}
+
+.card__instruction--disabled {
+  opacity: 0.4;
+}
+</style>
