@@ -1,13 +1,22 @@
 <!-- надо менять название так как компонент не уникален -->
 <template>
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <h1>Омега-3 <span>Тріска</span></h1>
-        <span>з вітамінами А і D3</span>
-      </div>
-    </div>
-  </section>
+  <!-- возмможно придется просто взять класс бутстрапа и его переделать -->
+  <button class="btn btn--success">До кошика</button>
 </template>
 
-<style></style>
+<style>
+.btn {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.btn--success {
+  background-color: #69c522;
+}
+</style>
