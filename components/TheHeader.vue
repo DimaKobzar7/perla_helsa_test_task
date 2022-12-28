@@ -9,17 +9,28 @@
       <!-- чини название классов так как топ больше нет -->
       <div class="header__middle">
         <div class="header__icon-group">
-          <img class="header__burger-menu" src="../assets/svg/burger-menu.svg" />
-          <img src="../assets/svg/search.svg" />
+          <!-- добавил чисто ради курсор поинтера или просто сделать стиль и туда его вкинуть -->
+          <a href="#">
+            <img class="header__icon header__burger-menu" src="../assets/svg/burger-menu.svg" />
+          </a>
+
+          <a href="#">
+            <img class="header__icon" src="../assets/svg/search.svg" />
+          </a>
         </div>
 
         <img src="../assets/svg/logo.svg" />
 
         <div class="header__icon-group">
           <!-- тут нужно тип для телефона загнать типо мейл ту -->
-          <a href=""><img src="../assets/svg/phone.svg" /></a>
+          <!-- и если его оставлять то надо поставить на ссылку размер и маржин -->
+          <a href="#">
+            <img class="header__icon" src="../assets/svg/phone.svg" />
+          </a>
 
-          <img class="header__cart" src="../assets/svg/cart.svg" />
+          <a href="#">
+            <img class="header__icon header__cart" src="../assets/svg/cart.svg" />
+          </a>
         </div>
       </div>
 
@@ -51,12 +62,48 @@
   margin-bottom: 46px;
 }
 
+.header__icon {
+  width: 21px;
+  height: 21px;
+}
+
+@media (min-width: 768px) {
+  .header__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .header__burger-menu {
-  margin-right: 40px;
+  margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .header__burger-menu {
+    margin-right: 33px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header__burger-menu {
+    margin-right: 40px;
+  }
 }
 
 .header__cart {
-  margin-left: 40px;
+  margin-left: 12px;
+}
+
+@media (min-width: 768px) {
+  .header__cart {
+    margin-left: 33px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header__cart {
+    margin-left: 40px;
+  }
 }
 
 .header__bottom {
