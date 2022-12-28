@@ -13,15 +13,14 @@
         <img src="../assets/svg/phone.svg" />
         <img src="../assets/svg/cart.svg" />
       </div>
-      <div class="header__bottom">
-        <nav>
-          <a href="#">Омега-3</a>
-          <a href="#">Вітаміни</a>
-          <a href="#">Добавки</a>
-          <a href="#">Доставка</a>
-          <a href="#">Про нас</a>
-        </nav>
-      </div>
+
+      <nav class="header__bottom">
+        <a class="header__link" href="#">Омега-3</a>
+        <a class="header__link" href="#">Вітаміни</a>
+        <a class="header__link" href="#">Добавки</a>
+        <a class="header__link" href="#">Доставка</a>
+        <a class="header__link" href="#">Про нас</a>
+      </nav>
     </div>
   </div>
 </template>
@@ -33,5 +32,32 @@
 }
 
 .header__text {
+}
+
+.header__bottom {
+  display: none;
+  /* align-items: center;
+  justify-content: center;
+  gap: 40px; */
+}
+
+@media (min-width: 768px) {
+  .header__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    margin-bottom: 64px;
+  }
+}
+
+.header__link {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 29px;
+
+  color: #1d1d1b;
+  text-decoration: none;
 }
 </style>
