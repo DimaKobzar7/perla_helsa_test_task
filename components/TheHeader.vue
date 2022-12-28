@@ -6,12 +6,21 @@
       <p class="header__text">Безкоштовна досавка від 1800 грн</p>
       <img src="../assets/svg/drugs.svg" />
     </div> -->
+      <!-- чини название классов так как топ больше нет -->
       <div class="header__middle">
-        <img src="../assets/svg/burger-menu.svg" />
-        <img src="../assets/svg/search.svg" />
+        <div class="header__icon-group">
+          <img class="header__burger-menu" src="../assets/svg/burger-menu.svg" />
+          <img src="../assets/svg/search.svg" />
+        </div>
+
         <img src="../assets/svg/logo.svg" />
-        <img src="../assets/svg/phone.svg" />
-        <img src="../assets/svg/cart.svg" />
+
+        <div class="header__icon-group">
+          <!-- тут нужно тип для телефона загнать типо мейл ту -->
+          <a href=""><img src="../assets/svg/phone.svg" /></a>
+
+          <img class="header__cart" src="../assets/svg/cart.svg" />
+        </div>
       </div>
 
       <nav class="header__bottom">
@@ -32,6 +41,22 @@
 }
 
 .header__text {
+}
+
+.header__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 46px;
+}
+
+.header__burger-menu {
+  margin-right: 40px;
+}
+
+.header__cart {
+  margin-left: 40px;
 }
 
 .header__bottom {
