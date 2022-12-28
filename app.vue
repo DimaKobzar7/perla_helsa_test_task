@@ -8,13 +8,13 @@
           <img src="./assets/svg/drugs.svg" />
         </div>
       </div>
-      <div class="container">
-        <!-- <NuxtWelcome /> -->
-        <TheHeader />
-        <TheCard />
-        <TheDelivery />
-      </div>
     </section>
+    <!-- <div class="container"> -->
+    <!-- <NuxtWelcome /> -->
+    <TheHeader />
+    <TheCard />
+    <TheDelivery />
+    <!-- </div> -->
   </main>
 </template>
 
@@ -57,6 +57,8 @@
 }
 
 body {
+  /* display: flex;
+  flex-direction: column; */
   margin: 0;
   /* font-family: Grtsk Giga;
   font-weight: 600; */
