@@ -53,19 +53,10 @@
   font-weight: 900;
 }
 
-/* оно и так все грузит и без этого может и с 1м шрифтом так же будет */
-/* скорее всего мой шрифт просто не подключился или все дела в том что тут есть папка static иа в 1м ее нет */
-/* нет так оно работает и раньше то был просто похожий шрифт */
 @font-face {
   font-family: Piazzolla;
   src: local("Piazzolla"),
-    url(~/assets/fonts/Piazzolla/static/Piazzolla/Piazzolla-MediumItalic.ttf)
-      format("truetype");
+    url(~/assets/fonts/Piazzolla/Piazzolla-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic;
 }
-
-/* 
-body {
-  font-family: "Onest";
-} */
