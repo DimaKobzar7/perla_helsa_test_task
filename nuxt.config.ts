@@ -43,6 +43,7 @@ export default defineNuxtConfig({
   //       ],
   //     },
   //   },
+  css: ['assets/main.scss', '~/layouts/global.css'],
   //   modules: ['bootstrap'],
   //   modules: ['bootstrap/dist/js/bootstrap.bundle.min.js'],
   //   plugins: [{ src: 'bootstrap/dist/js/bootstrap.bundle.min.js' }],
