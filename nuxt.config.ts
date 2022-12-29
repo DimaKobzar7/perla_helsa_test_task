@@ -4,9 +4,11 @@ export default defineNuxtConfig({
     head: {
       //  подключило, лучше оставить так чем в компоненте
       link: [
-        // { rel: 'stylesheet', href: '/assets/main.scss' },
-        // { rel: 'stylesheet', href: '~/layouts/global.css' },
+        //   { rel: 'stylesheet', href: '/assets/main.scss' },
+        //   { rel: 'stylesheet', href: '~/layouts/global.css' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&display=swap' },
       ],
+      // CSS: [],
       script: [{ src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js' }],
     },
   },

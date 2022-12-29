@@ -53,10 +53,10 @@
   font-weight: 900;
 }
 
-@font-face {
+/* @font-face {
   font-family: Piazzolla;
   src: local("Piazzolla"),
     url(~/assets/fonts/Piazzolla/Piazzolla-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic;
-}
+} */
