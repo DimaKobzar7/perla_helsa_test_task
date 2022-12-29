@@ -1,6 +1,24 @@
 <template>
   <main>
+    <!-- для роутера нужен один корнеаой элемент (тег) в который будут ставится другие теги  -->
     <!-- стоит ли делать роутер?? <NuxtPage /> -->
+    <!-- data methods то все vue 2 в vue 3 делали через: -->
+    <!-- <script>
+      export default defineComponent({
+        setup() {
+            переменная
+          const count = ref(0);
+
+          ее метод (value то спец свойство где лежит значение)
+          const incr = () => count.value++;
+
+          return { count, incr };
+        },
+      });
+    </script> -->
+    <!-- это как строится логика в компонента в vue3 -->
+    <!-- сейчас нужно делать <script setup></script>  -->
+
     <TheCap />
 
     <!-- <div class="container"> -->
