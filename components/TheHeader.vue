@@ -10,13 +10,13 @@
       <div class="header__middle">
         <div class="header__icon-group">
           <!-- добавил чисто ради курсор поинтера или просто сделать стиль и туда его вкинуть -->
-          <a href="#">
+          <NuxtLink to="#">
             <img class="header__icon header__burger-menu" src="../assets/svg/burger-menu.svg" />
-          </a>
+          </NuxtLink>
 
-          <a href="#">
+          <NuxtLink to="#">
             <img class="header__icon" src="../assets/svg/search.svg" />
-          </a>
+          </NuxtLink>
         </div>
 
         <img src="../assets/svg/logo.svg" />
@@ -24,28 +24,43 @@
         <div class="header__icon-group">
           <!-- тут нужно тип для телефона загнать типо мейл ту -->
           <!-- и если его оставлять то надо поставить на ссылку размер и маржин -->
-          <a href="#">
+          <NuxtLink to="#">
             <img class="header__icon" src="../assets/svg/phone.svg" />
-          </a>
+          </NuxtLink>
 
-          <a href="#">
+          <NuxtLink to="#">
             <img class="header__icon header__cart" src="../assets/svg/cart.svg" />
-          </a>
+          </NuxtLink>
         </div>
       </div>
 
       <nav class="header__bottom">
-        <a class="header__link" href="#">Омега-3</a>
-        <a class="header__link" href="#">Вітаміни</a>
-        <a class="header__link" href="#">Добавки</a>
-        <a class="header__link" href="#">Доставка</a>
-        <a class="header__link" href="#">Про нас</a>
+        <NuxtLink class="header__link" to="#">Омега-3</NuxtLink>
+        <NuxtLink class="header__link" to="#">Вітаміни</NuxtLink>
+        <NuxtLink class="header__link" to="#">Добавки</NuxtLink>
+        <NuxtLink class="header__link" to="#">Доставка</NuxtLink>
+        <NuxtLink class="header__link" to="#">Про нас</NuxtLink>
       </nav>
     </div>
   </div>
 </template>
 
 <!-- из другой папки пока стили не тянет -->
+<!-- из другой папки пока стили не тянет -->
+<!-- так возможно scss можно поставить -->
+<!-- <style lang="scss">
+// ошибка просит его загрузить
+.header {
+  &__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 46px;
+  }
+}
+
+</style> -->
 <style>
 .header {
   /* background-color: #99afff; */
@@ -108,9 +123,6 @@
 
 .header__bottom {
   display: none;
-  /* align-items: center;
-  justify-content: center;
-  gap: 40px; */
 }
 
 @media (min-width: 768px) {

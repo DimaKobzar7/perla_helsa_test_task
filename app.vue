@@ -1,5 +1,6 @@
 <template>
   <main>
+    <!-- стоит ли делать роутер?? <NuxtPage /> -->
     <TheCap />
 
     <!-- <div class="container"> -->
