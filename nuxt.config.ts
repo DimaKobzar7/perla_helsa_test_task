@@ -1,8 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      //  подключило, лучше оставить так чем в компоненте
+      link: [
+        // { rel: 'stylesheet', href: '/assets/main.scss' },
+        // { rel: 'stylesheet', href: '~/layouts/global.css' },
+      ],
+      script: [{ src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js' }],
+    },
+  },
+  css: ['assets/main.scss', '~/layouts/global.css'],
   //   app: {
   //     head: {
   //       link: [{ rel: 'stylesheet', href: 'bootstrap/dist/css/bootstrap.min.css' }],
+  //       script: [{ src: 'script.js' }],
+  //     },
+  //   },
+
+  //   app: {
+  //     head: {
+  //       // опять ошибка с уголком
+  //       link: [{ rel: 'application/javascript', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js' }],
   //       script: [{ src: 'script.js' }],
   //     },
   //   },
@@ -43,7 +62,8 @@ export default defineNuxtConfig({
   //       ],
   //     },
   //   },
-  css: ['assets/main.scss', '~/layouts/global.css'],
+  //   это основа
+  // css: ['assets/main.scss', '~/layouts/global.css'],
   //   modules: ['bootstrap'],
   //   modules: ['bootstrap/dist/js/bootstrap.bundle.min.js'],
   //   plugins: [{ src: 'bootstrap/dist/js/bootstrap.bundle.min.js' }],

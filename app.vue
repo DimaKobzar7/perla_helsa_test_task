@@ -100,7 +100,8 @@ const toggle = () => {
 };
 </script> -->
 
-<script setup>
+<!-- это работает -->
+<!-- <script setup>
 useHead({
   title: 'Perla Helsa',
   //   link: [
@@ -119,7 +120,7 @@ useHead({
     },
   ],
 });
-</script>
+</script> -->
 <!-- <script>
 export default {
   //   head() {
