@@ -3,16 +3,24 @@
   <section class="section">
     <div class="container">
       <div class="card">
-        <h1 class="card__title">Омега-3 <span class="card__subtitle">Тріска</span></h1>
+        <h1 class="card__title">
+          Омега-3 <span class="card__subtitle">Тріска</span>
+        </h1>
         <div class="card__label">з вітамінами А і D3</div>
         <!-- тут должны быть табы -->
         <div class="card__info">
           <img class="card__icon" src="../assets/svg/drug-green.svg" alt="" />
           <!-- может тут все надо поместить в 1 тег -->
           <div class="card__inner">
-            <h5 class="card__instruction card__instruction--title">В упаковці:</h5>
-            <p class="card__instruction card__instruction--standard">120 капсул по 500 мг</p>
-            <p class="card__instruction card__instruction--disabled">1 місяць прийому</p>
+            <h5 class="card__instruction card__instruction--title">
+              В упаковці:
+            </h5>
+            <p class="card__instruction card__instruction--standard">
+              120 капсул по 500 мг
+            </p>
+            <p class="card__instruction card__instruction--disabled">
+              1 місяць прийому
+            </p>
           </div>
           <div class="card__price">
             <span class="card__old-price">963 ₴</span>
@@ -27,7 +35,32 @@
 </template>
 
 <style>
+@font-face {
+  font-family: "Onest", sans-serif;
+  src: url("./assets/fonts/onest/TTF/OnestRegular1602-hint.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Onest", sans-serif;
+  src: url("./assets/fonts/onest/TTF/OnestMedium1602-hint.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Onest", sans-serif;
+  src: url("./assets/fonts/onest/TTF/OnestBold1602-hint.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Onest", sans-serif;
+  src: url("./assets/fonts/onest/TTF/OnestExtraBold1602-hint.ttf");
+  font-weight: 900;
+}
+
 .card__title {
+  /* font-family: "Onest", sans-serif; */
   font-weight: 700;
   font-size: 40px;
   line-height: 51px;
