@@ -1,8 +1,8 @@
 <template>
   <div class="counter">
-    <button class="counter__btn">-</button>
-    <div class="counter__number">1</div>
-    <button class="counter__btn">+</button>
+    <button class="counter__btn" @click="minus">-</button>
+    <div class="counter__number">{{ count }}</div>
+    <button class="counter__btn" @click="plus">+</button>
   </div>
 </template>
 
@@ -33,3 +33,26 @@
   color: #00284f;
 }
 </style>
+
+<script setup>
+const count = ref(0);
+
+// if (count < 0) {
+//   count = 0;
+// }
+
+const plus = () => count.value++;
+
+// норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
+const minus = () => {
+  // условие работает но ничего не происходит
+  if (count.value > 0) {
+    // console.log('gg');
+    // count.value = 0;
+    count.value--;
+  }
+  //   console.log('gg');
+  //   console.log(count);
+  //   count.value--;
+};
+</script>
