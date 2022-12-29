@@ -84,11 +84,35 @@ body {
   min-height: 100vh;
   overflow: hidden;
 
-  background: linear-gradient(
-    180deg,
-    rgba(200, 224, 149, 0.8) -5.17%,
-    rgba(221, 238, 239, 0.8) 47.96%,
-    rgba(255, 255, 255, 0.8) 100%
-  );
+  background: linear-gradient(180deg, rgba(200, 224, 149, 0.8) -5.17%, rgba(221, 238, 239, 0.8) 47.96%, rgba(255, 255, 255, 0.8) 100%);
 }
 </style>
+
+<!-- <script setup>
+import { Modal } from 'bootstrap';
+const { $bootstrap } = useNuxtApp();
+let modal;
+onMounted(() => {
+  modal = new $bootstrap.Modal(document.getElementById('modal-main'));
+});
+const toggle = () => {
+  modal.toggle();
+};
+</script> -->
+
+<script>
+export default {
+  //   head() {
+  //     return {
+  //       // не работает у вкладки имя не меняется
+  //       title: 'Perla Helsa',
+  //     };
+  //   },
+  useContentHead() {
+    return {
+      title: 'Perla Helsa',
+      description: 'What a lovely page.',
+    };
+  },
+};
+</script>

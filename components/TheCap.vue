@@ -4,6 +4,22 @@
     <!-- на 768 текст меняется -->
     <p class="cap__text">Безкоштовна доставка від 1800 грн</p>
     <img class="cap__icon" src="../assets/svg/drugs.svg" />
+    <!-- <label for="customRange1" class="form-label">Example range</label>
+    <input type="range" class="form-range" id="customRange1" /> -->
+    <!-- <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul> -->
   </div>
 </template>
 
