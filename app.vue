@@ -100,7 +100,27 @@ const toggle = () => {
 };
 </script> -->
 
-<script>
+<script setup>
+useHead({
+  title: 'Perla Helsa',
+  link: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
+      rel: 'stylesheet',
+      integrity: 'sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65',
+      crossorigin: 'anonymous',
+    },
+  ],
+  script: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js',
+      integrity: 'sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V',
+      crossorigin: 'anonymous',
+    },
+  ],
+});
+</script>
+<!-- <script>
 export default {
   //   head() {
   //     return {
@@ -108,11 +128,21 @@ export default {
   //       title: 'Perla Helsa',
   //     };
   //   },
-  useContentHead() {
-    return {
-      title: 'Perla Helsa',
-      description: 'What a lovely page.',
-    };
-  },
+
+//   useHead() {
+//     return {
+//       title: 'Perla Helsa',
+//       description: 'What a lovely page.',
+//       link: [
+//         {
+//           href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
+//           rel: 'stylesheet',
+//           integrity: 'sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65',
+//           crossorigin: 'anonymous',
+//         },
+//       ],
+//     };
+//   },
 };
-</script>
+</script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->

@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   //     },
   //   },
   //   это работает но неясно как скрипты поставить
-  css: ['bootstrap/dist/css/bootstrap.min.css', '~/layouts/global.css'],
+  //   css: ['bootstrap/dist/css/bootstrap.min.css', '~/layouts/global.css'],
   //   css: ['bootstrap/scss/bootstrap.scss', '~/layouts/global.css'],
   //   work делай свой файл scss и туда импорти стили бутстрапа!!!!!!!!!!!
   //   css: ['bootstrap/scss/bootstrap.scss'],
