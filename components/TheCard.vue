@@ -105,3 +105,5 @@
   color: #00284f;
 }
 </style>
+
+<script setup></script>
