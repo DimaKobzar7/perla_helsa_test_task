@@ -69,7 +69,10 @@
 }
 
 .card__subtitle {
-  font-weight: 300;
+  font-family: Piazzolla;
+  font-style: italic;
+  font-weight: 500;
+  /* font-weight: 300; */
   /* font-size: 40px;
   line-height: 51px;
 

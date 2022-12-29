@@ -79,11 +79,11 @@ body {
   flex-direction: column; */
   margin: 0;
   /* font-family: "Onest", sans-serif; */
-  /* font-family: Onest; */
+  font-family: Onest;
   font-weight: 400;
   min-height: 100vh;
   overflow: hidden;
-  /* не работает градиент */
+
   background: linear-gradient(
     180deg,
     rgba(200, 224, 149, 0.8) -5.17%,
