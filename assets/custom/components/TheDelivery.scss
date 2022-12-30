@@ -1,22 +1,49 @@
 .delivery {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 
-  padding: 20px 56px;
+  padding: 38px 60px;
 
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.54) 100%);
   border-radius: 15px;
 
+  @include onDesktop {
+    padding: 20px 56px;
+    gap: 120px;
+  }
+
   &__item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     // max-width: 344px;
+
+    @include onTablet {
+      //   max-width: 156px;
+    }
+
+    @include onDesktop {
+      //   max-width: 344px;
+      flex-direction: row;
+    }
   }
 
   &__icon {
-    margin-right: 24px;
-    width: 56px;
-    height: 36px;
+    // margin-right: 24px;
+    width: 54px;
+    height: 54px;
+
+    @include onTablet {
+      margin-bottom: 24px;
+      width: 56px;
+      height: 36px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 0;
+      margin-right: 24px;
+    }
   }
 
   &__text {
@@ -31,6 +58,12 @@
     @include onTablet {
       font-size: 18px;
       line-height: 1.33;
+
+      text-align: center;
+    }
+
+    @include onDesktop {
+      text-align: start;
     }
   }
 }
