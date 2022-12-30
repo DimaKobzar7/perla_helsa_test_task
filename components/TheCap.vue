@@ -22,9 +22,10 @@
     </ul> -->
   </div>
 </template>
-
+<!--
+ поменяй название
 <style>
-/* поменяй название */
+
 .cap {
   display: flex;
   justify-content: center;
@@ -51,7 +52,6 @@
   .cap__text {
     font-size: 20px;
     line-height: 1.2;
-    /* identical to box height, or 120% */
 
     color: #ffffff;
   }
@@ -75,4 +75,4 @@
     height: 24px;
   }
 }
-</style>
+</style> -->

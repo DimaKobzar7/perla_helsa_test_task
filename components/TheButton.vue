@@ -27,7 +27,7 @@
 }
 </style> -->
 
-<style lang="scss">
+<!-- <style lang="scss">
 .btn {
   padding: 16px;
   font-size: 18px;
@@ -48,4 +48,4 @@
     background-color: #69c522;
   }
 }
-</style>
+</style> -->

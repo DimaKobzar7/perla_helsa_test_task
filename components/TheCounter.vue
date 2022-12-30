@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style>
+<!-- <style>
 .counter {
   display: flex;
   align-items: center;
@@ -26,13 +26,13 @@
   font-weight: 400;
   line-height: 1.25;
 
-  /* text-align: center; */
+
   background: rgba(255, 255, 255, 0.7);
   border-radius: 7px;
 
   color: #00284f;
 }
-</style>
+</style> -->
 
 <script setup>
 const count = ref(0);

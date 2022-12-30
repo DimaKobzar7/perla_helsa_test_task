@@ -1,0 +1,20 @@
+.btn {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  border-radius: 40px;
+
+  outline: none;
+
+  border: none;
+
+  &--success {
+    background-color: #69c522;
+  }
+}

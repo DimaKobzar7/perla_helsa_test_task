@@ -31,7 +31,12 @@
   </main>
 </template>
 
-<style>
+<!-- <style lang="scss" src="./assets/main.scss"></style> -->
+
+<!-- <script src="@/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<style lang="scss">
+// @import './assets/main.scss';
 * {
   box-sizing: border-box;
 }
@@ -84,12 +89,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
 
-  background: linear-gradient(
-    180deg,
-    rgba(200, 224, 149, 0.8) -5.17%,
-    rgba(221, 238, 239, 0.8) 47.96%,
-    rgba(255, 255, 255, 0.8) 100%
-  );
+  background: linear-gradient(180deg, rgba(200, 224, 149, 0.8) -5.17%, rgba(221, 238, 239, 0.8) 47.96%, rgba(255, 255, 255, 0.8) 100%);
 }
 </style>
 

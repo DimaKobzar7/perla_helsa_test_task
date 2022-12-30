@@ -50,7 +50,7 @@
   </section>
 </template>
 
-<style>
+<!-- <style>
 /* @font-face {
   font-family: 'Onest', sans-serif;
   src: url('./assets/fonts/onest/TTF/OnestRegular1602-hint.ttf');
@@ -156,6 +156,6 @@
 
   color: #00284f;
 }
-</style>
+</style> -->
 
-<script setup></script>
+<!-- <script setup></script> -->

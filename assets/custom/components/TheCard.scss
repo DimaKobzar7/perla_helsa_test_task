@@ -1,0 +1,79 @@
+.card {
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+
+    color: #00284f;
+  }
+
+  &__subtitle {
+    font-family: Piazzolla;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  &__label {
+    padding: 8px 0;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+
+    text-align: center;
+
+    color: #00284f;
+
+    background: #ffffff;
+    border-radius: 50px;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 32px;
+  }
+
+  &__instruction {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.28;
+
+    color: #00284f;
+
+    //   на бутстрап это можно поставить
+    &--standard {
+      font-weight: 500;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+    }
+  }
+
+  &__price {
+    //  возможно эта обертка не нужна если в колонки удастся посадить
+  }
+
+  &__old-price {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 36px;
+
+    color: rgba(0, 40, 79, 0.3);
+
+    text-align: center;
+
+    letter-spacing: -0.03em;
+  }
+
+  &__current-price {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 51px;
+
+    color: #00284f;
+  }
+}

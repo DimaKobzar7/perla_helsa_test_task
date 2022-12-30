@@ -11,10 +11,7 @@ import "../assets/custom/utils/_mixins.scss";
         <div class="header__icon-group">
           <!-- добавил чисто ради курсор поинтера или просто сделать стиль и туда его вкинуть -->
           <NuxtLink to="#">
-            <img
-              class="header__icon header__burger-menu"
-              src="../assets/svg/burger-menu.svg"
-            />
+            <img class="header__icon header__burger-menu" src="../assets/svg/burger-menu.svg" />
           </NuxtLink>
 
           <NuxtLink to="#">
@@ -68,18 +65,17 @@ import "../assets/custom/utils/_mixins.scss";
 <!-- и это походу правда так как стили на бади были перечеркнуты наверное из за того что ори стоят выше чем стили из этого компонента -->
 <!-- но если они стоят выше то и миксины должны быть видны -->
 <!-- <style lang="scss">
+// @import '../assets/custom/utils/mixins';
 // @mixin onDesktop {
 //   @media (min-width: 1300px) {
 //     @content;
 //   }
 // }
-
 // @mixin onTablet {
 //   @media (min-width: 768px) {
 //     @content;
 //   }
 // }
-
 .header {
   &__middle {
     display: flex;
@@ -92,15 +88,20 @@ import "../assets/custom/utils/_mixins.scss";
   &__icon {
     width: 21px;
     height: 21px;
+
+    // @include onTablet {
+    //   width: 24px;
+    //   height: 24px;
+    // }
   }
 }
 
-@media (min-width: 768px) {
-  .header__icon {
-    width: 24px;
-    height: 24px;
-  }
-}
+// @media (min-width: 768px) {
+//   .header__icon {
+//     width: 24px;
+//     height: 24px;
+//   }
+// }
 
 .header__burger-menu {
   margin-right: 12px;

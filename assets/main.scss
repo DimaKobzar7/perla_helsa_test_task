@@ -3,25 +3,29 @@
 // @import '../node_modules/bootstrap/scss/mixins/';
 // @import '../node_modules/bootstrap/scss/card';
 // @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/utilities";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
 
-@import "../node_modules/bootstrap/scss/card";
-@import "../node_modules/bootstrap/scss/containers";
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/containers';
 // пока все формы возьмем
-@import "../node_modules/bootstrap/scss/forms";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/nav";
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/nav';
 
 // не импортит отсюда
 // надо  assets добавлять вперед чтобы понимал а просто относительный путь не работает так как вебпак должен увидеть папку assets
 // но все равно не видит миксин
 // @import "./custom/utils/mixins";
-@import "assets/custom/utils/mixins";
-@import "assets/custom/components/header.scss";
+@import 'assets/custom/utils/mixins';
+@import 'assets/custom/components/TheHeader.scss';
+@import 'assets/custom/components/TheButton.scss';
+@import 'assets/custom/components/TheCap.scss';
+@import 'assets/custom/components/TheCard.scss';
+@import 'assets/custom/components/TheCounter.scss';
 
 // Configuration
 // @import "../../node_modules/bootstrap/scss/functions";
