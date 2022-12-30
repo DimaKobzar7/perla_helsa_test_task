@@ -3,7 +3,7 @@
   <section class="section">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-xxl-6">
           <div class="card">
             <h1 class="card__title">Омега-3 <span class="card__subtitle">Тріска</span></h1>
             <div class="card__label">з вітамінами А і D3</div>
@@ -45,7 +45,7 @@
             <TheButton />
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-xxl-6">
           <img src="../assets/img/slide1.png" alt="" />
         </div>
       </div>
