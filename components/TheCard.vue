@@ -45,6 +45,9 @@
             <TheButton />
           </div>
         </div>
+        <div class="col-6">
+          <img src="../assets/img/slide1.png" alt="" />
+        </div>
       </div>
     </div>
   </section>

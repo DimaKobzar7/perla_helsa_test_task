@@ -7,7 +7,7 @@ import "../assets/custom/utils/_mixins.scss";
   <div class="header">
     <div class="container">
       <!-- чини название классов так как топ больше нет -->
-      <div class="header__middle">
+      <div class="header__top">
         <div class="header__icon-group">
           <!-- добавил чисто ради курсор поинтера или просто сделать стиль и туда его вкинуть -->
           <NuxtLink to="#">

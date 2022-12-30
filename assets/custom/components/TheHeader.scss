@@ -1,5 +1,11 @@
 .header {
-  &__middle {
+  margin-bottom: 64px;
+
+  @include onDesktop {
+    margin-bottom: 125px;
+  }
+
+  &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,8 +57,6 @@
       align-items: center;
       justify-content: center;
       gap: 55px;
-
-      margin-bottom: 64px;
     }
 
     @include onDesktop {
