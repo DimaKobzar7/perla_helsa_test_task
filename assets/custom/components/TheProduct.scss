@@ -1,4 +1,4 @@
-.card {
+.product {
   &__title {
     font-weight: 700;
     font-size: 40px;
@@ -30,6 +30,10 @@
 
   &__info {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 64px;
   }
 
   &__icon {
@@ -38,12 +42,15 @@
 
   &__instruction {
     font-size: 18px;
-    font-weight: 700;
     line-height: 1.28;
+    font-weight: 500;
 
     color: #00284f;
 
-    //   на бутстрап это можно поставить
+    @include onDesktop {
+        font-weight: 700;
+      }
+
     &--standard {
       font-weight: 500;
     }

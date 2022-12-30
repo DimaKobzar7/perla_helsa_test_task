@@ -25,7 +25,7 @@
     <!-- <div class="container"> -->
     <!-- <NuxtWelcome /> -->
     <TheHeader />
-    <TheCard />
+    <TheProduct />
     <TheDelivery />
     <!-- </div> -->
   </main>

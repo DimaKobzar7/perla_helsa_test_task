@@ -4,9 +4,16 @@
     <div class="container">
       <div class="row">
         <div class="col-xxl-6 order-xxl-0 order-1">
-          <div class="card">
-            <h1 class="card__title">Омега-3 <span class="card__subtitle">Тріска</span></h1>
-            <div class="card__label">з вітамінами А і D3</div>
+          <div class="product">
+            <div class="row">
+              <div class="col-6">
+                <h1 class="product__title">Омега-3 <span class="product__subtitle">Тріска</span></h1>
+              </div>
+              <div class="col-6">
+                <div class="product__label">з вітамінами А і D3</div>
+              </div>
+            </div>
+
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
@@ -21,24 +28,24 @@
                 <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
               </li>
             </ul>
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content mb-5" id="myTabContent">
               <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">fgfgf</div>
               <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">1111111</div>
               <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">2222222</div>
               <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">33333333.</div>
             </div>
-            <!-- тут должны быть табы -->
-            <div class="card__info">
-              <img class="card__icon" src="../assets/svg/drug-green.svg" alt="" />
-              <!-- может тут все надо поместить в 1 тег -->
-              <div class="card__inner">
-                <h5 class="card__instruction card__instruction--title">В упаковці:</h5>
-                <p class="card__instruction card__instruction--standard">120 капсул по 500 мг</p>
-                <p class="card__instruction card__instruction--disabled">1 місяць прийому</p>
+            <div class="product__info">
+              <div class="d-flex">
+                <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
+                <div>
+                  <h5 class="product__instruction mb-1">В упаковці:</h5>
+                  <p class="product__instruction product__instruction--standard mb-1">120 капсул по 500 мг</p>
+                  <p class="product__instruction product__instruction--disabled">1 місяць прийому</p>
+                </div>
               </div>
-              <div class="card__price">
-                <span class="card__old-price">963 ₴</span>
-                <span class="card__current-price">489 ₴</span>
+              <div class="product__price">
+                <span class="product__old-price">963 ₴</span>
+                <span class="product__current-price">489 ₴</span>
               </div>
             </div>
             <TheCounter />
