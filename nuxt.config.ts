@@ -3,20 +3,32 @@ export default defineNuxtConfig({
   app: {
     head: {
       //  подключило, лучше оставить так чем в компоненте
-      title: 'Perla Helsa',
+      title: "Perla Helsa",
       link: [
         // { rel: 'stylesheet', href: 'assets/main.scss' },
         //   { rel: 'stylesheet', href: '~/layouts/global.css' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&display=swap' },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&display=swap",
+        },
       ],
       // CSS: [],
-      script: [{ src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js' }],
+      script: [
+        {
+          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js",
+        },
+      ],
       //   сюда наверное в качестве плагина ставить свайпер
       // инструкции https://nuxt.com/docs/api/configuration/nuxt-config
     },
     // css: ['assets/main.scss', '~/layouts/global.css'],
   },
-  css: ['assets/main.scss', '~/layouts/global.css'],
+  css: [
+    "assets/main.scss",
+    "~/layouts/global.css",
+    // стили тянет но миксины не тянет
+    // "assets/custom/utils/_mixins.scss",
+  ],
   //   app: {
   //     head: {
   //       link: [{ rel: 'stylesheet', href: 'bootstrap/dist/css/bootstrap.min.css' }],

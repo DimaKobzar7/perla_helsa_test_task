@@ -1,17 +1,20 @@
+<!-- и это не помагает -->
+<!-- <script setup>
+import "../assets/custom/utils/_mixins.scss";
+</script> -->
+
 <template>
   <div class="header">
     <div class="container">
-      <!-- <div class="header__top">
-      <img src="../assets/svg/drugs.svg" />
-      <p class="header__text">Безкоштовна досавка від 1800 грн</p>
-      <img src="../assets/svg/drugs.svg" />
-    </div> -->
       <!-- чини название классов так как топ больше нет -->
       <div class="header__middle">
         <div class="header__icon-group">
           <!-- добавил чисто ради курсор поинтера или просто сделать стиль и туда его вкинуть -->
           <NuxtLink to="#">
-            <img class="header__icon header__burger-menu" src="../assets/svg/burger-menu.svg" />
+            <img
+              class="header__icon header__burger-menu"
+              src="../assets/svg/burger-menu.svg"
+            />
           </NuxtLink>
 
           <NuxtLink to="#">
@@ -28,8 +31,8 @@
             <img class="header__icon" src="../assets/svg/phone.svg" />
           </NuxtLink>
 
-          <NuxtLink to="#">
-            <img class="header__icon header__cart" src="../assets/svg/cart.svg" />
+          <NuxtLink class="header__cart" to="#">
+            <img class="header__icon" src="../assets/svg/cart.svg" />
           </NuxtLink>
         </div>
       </div>
@@ -61,25 +64,35 @@
 }
 
 </style> -->
-<style>
+<!-- может так случилось потому что это отдельный тег со стилями который не знает про другие файлы или он подключается раньше миксинов -->
+<!-- и это походу правда так как стили на бади были перечеркнуты наверное из за того что ори стоят выше чем стили из этого компонента -->
+<!-- но если они стоят выше то и миксины должны быть видны -->
+<!-- <style lang="scss">
+// @mixin onDesktop {
+//   @media (min-width: 1300px) {
+//     @content;
+//   }
+// }
+
+// @mixin onTablet {
+//   @media (min-width: 768px) {
+//     @content;
+//   }
+// }
+
 .header {
-  /* background-color: #99afff; */
-}
+  &__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.header__text {
-}
+    margin-bottom: 46px;
+  }
 
-.header__middle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-bottom: 46px;
-}
-
-.header__icon {
-  width: 21px;
-  height: 21px;
+  &__icon {
+    width: 21px;
+    height: 21px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -106,6 +119,8 @@
 }
 
 .header__cart {
+  position: relative;
+  display: inline-block;
   margin-left: 12px;
 }
 
@@ -130,9 +145,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 55px;
 
     margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header__bottom {
+    gap: 40px;
   }
 }
 
@@ -144,4 +165,4 @@
   color: #1d1d1b;
   text-decoration: none;
 }
-</style>
+</style> -->
