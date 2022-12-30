@@ -1,12 +1,13 @@
 .product {
   &__title {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 51px;
+    font-size: 25px;
+    line-height: 32px;
 
     color: #00284f;
 
     @include onTablet {
+      font-size: 40px;
       font-weight: 500;
       line-height: 1.2;
     }
@@ -22,7 +23,7 @@
     font-weight: 500;
   }
 
-  &__label {
+  &__badge {
     padding: 8px 0;
 
     font-size: 22px;
