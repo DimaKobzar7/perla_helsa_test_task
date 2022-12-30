@@ -14,6 +14,28 @@
           <img class="delivery__icon" src="../assets/svg/guarantee.svg" alt="" />
           <p class="delivery__text">Гарантія повернення грошових коштів</p>
         </div>
+        <!-- пока оставлю 1й вариант так как тут надо менять бутстраповские брейкпоинты и если в карточке не придется их менять то оставлю 1й вариант -->
+        <!-- также тут delivery__item можно убрать и на колонку вешать нужные мне флексы -->
+        <!-- <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="delivery__item">
+              <img class="delivery__icon" src="../assets/svg/car.svg" alt="" />
+              <p class="delivery__text">Безкоштовна доставка від 1800 грн</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="delivery__item">
+              <img class="delivery__icon" src="../assets/svg/box.svg" alt="" />
+              <p class="delivery__text">Відправки в день оформлення замовлення до 16:00</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="delivery__item">
+              <img class="delivery__icon" src="../assets/svg/guarantee.svg" alt="" />
+              <p class="delivery__text">Гарантія повернення грошових коштів</p>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>
