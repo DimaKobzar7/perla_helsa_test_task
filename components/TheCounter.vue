@@ -6,6 +6,29 @@
   </div>
 </template>
 
+<script setup>
+const count = ref(0);
+
+// if (count < 0) {
+//   count = 0;
+// }
+
+const plus = () => count.value++;
+
+// норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
+const minus = () => {
+  // условие работает но ничего не происходит
+  if (count.value > 0) {
+    // console.log('gg');
+    // count.value = 0;
+    count.value--;
+  }
+  //   console.log('gg');
+  //   console.log(count);
+  //   count.value--;
+};
+</script>
+
 <!-- <style>
 .counter {
   display: flex;
@@ -33,26 +56,3 @@
   color: #00284f;
 }
 </style> -->
-
-<script setup>
-const count = ref(0);
-
-// if (count < 0) {
-//   count = 0;
-// }
-
-const plus = () => count.value++;
-
-// норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
-const minus = () => {
-  // условие работает но ничего не происходит
-  if (count.value > 0) {
-    // console.log('gg');
-    // count.value = 0;
-    count.value--;
-  }
-  //   console.log('gg');
-  //   console.log(count);
-  //   count.value--;
-};
-</script>

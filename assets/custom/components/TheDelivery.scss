@@ -1,0 +1,25 @@
+.delivery {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 56px;
+
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.54) 100%);
+  border-radius: 15px;
+
+  &__item {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #00284f;
+  }
+}

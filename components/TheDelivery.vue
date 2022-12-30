@@ -19,7 +19,7 @@
   </section>
 </template>
 
-<style>
+<!-- <style>
 .delivery {
   display: flex;
   justify-content: space-between;
@@ -45,4 +45,4 @@
 
   color: #00284f;
 }
-</style>
+</style> -->

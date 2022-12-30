@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
   css: [
     'assets/main.scss',
-    '~/layouts/global.css',
+    // '~/layouts/global.css',
     // стили тянет но миксины не тянет
     // 'assets/custom/utils/_mixins.scss',
   ],

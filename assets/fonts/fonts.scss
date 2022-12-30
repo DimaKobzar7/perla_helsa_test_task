@@ -24,39 +24,35 @@
 
 @font-face {
   font-family: Onest;
-  src: local("Onest"),
-    url(~/assets/fonts/onest/TTF/OnestRegular1602-hint.ttf) format("truetype");
+  src: local('Onest'), url(~/assets/fonts/onest/TTF/OnestRegular1602-hint.ttf) format('truetype');
   /* url("../assets/fonts//onest/TTF/OnestRegular1602-hint.ttf");
-  /*    url(~assets/Oxygen/Oxygen-Regular.ttf) format("truetype"); */
+    /*    url(~assets/Oxygen/Oxygen-Regular.ttf) format("truetype"); */
   /* src: url("../assets/fonts/onest/TTF/OnestRegular1602-hint.ttf"); */
   font-weight: 400;
 }
 
 @font-face {
   font-family: Onest;
-  src: local("Onest"),
-    url(~/assets/fonts/onest/TTF/OnestMedium1602-hint.ttf) format("truetype");
+  src: local('Onest'), url(~/assets/fonts/onest/TTF/OnestMedium1602-hint.ttf) format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: Onest;
-  src: local("Onest"),
-    url(~/assets/fonts/onest/TTF/OnestBold1602-hint.ttf) format("truetype");
+  src: local('Onest'), url(~/assets/fonts/onest/TTF/OnestBold1602-hint.ttf) format('truetype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Onest;
-  src: local("Onest"),
-    url(~/assets/fonts/onest/TTF/OnestExtraBold1602-hint.ttf) format("truetype");
+  src: local('Onest'), url(~/assets/fonts/onest/TTF/OnestExtraBold1602-hint.ttf) format('truetype');
   font-weight: 900;
 }
 
 /* @font-face {
-  font-family: Piazzolla;
-  src: local("Piazzolla"),
-    url(~/assets/fonts/Piazzolla/Piazzolla-MediumItalic.ttf) format("truetype");
-  font-weight: 500;
-  font-style: italic;
-} */
+    font-family: Piazzolla;
+    src: local("Piazzolla"),
+      url(~/assets/fonts/Piazzolla/Piazzolla-MediumItalic.ttf) format("truetype");
+    font-weight: 500;
+    font-style: italic;
+  } */
