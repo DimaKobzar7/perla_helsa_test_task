@@ -5,6 +5,15 @@
     line-height: 51px;
 
     color: #00284f;
+
+    @include onTablet {
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    @include onDesktop {
+      line-height: 51px;
+    }
   }
 
   &__subtitle {
@@ -30,10 +39,18 @@
 
   &__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      margin-bottom: 64px;
+    }
   }
 
   &__icon {
