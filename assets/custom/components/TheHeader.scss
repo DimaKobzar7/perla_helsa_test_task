@@ -1,8 +1,12 @@
 .header {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    margin-bottom: 36px;
+  }
 
   @include onDesktop {
-    margin-bottom: 125px;
+    margin-bottom: 93px;
   }
 
   &__top {
