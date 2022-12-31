@@ -90,6 +90,16 @@
     }
   }
 
+  &__icon-wrap {
+    display: flex;
+    // margin-bottom: 64px;
+  }
+
+  //   test
+  &__mb-6 {
+    margin-bottom: 64px;
+  }
+
   //не по центру надо а немного в бок иконку   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   &__icon {
     margin-right: 26px;

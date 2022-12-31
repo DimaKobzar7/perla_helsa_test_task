@@ -121,7 +121,7 @@
               </div>
             </div>
             <div class="product__info">
-              <div class="d-flex">
+              <div class="d-none d-md-flex">
                 <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
                 <div>
                   <h5 class="product__instruction mb-1">В упаковці:</h5>
@@ -129,19 +129,54 @@
                   <p class="product__instruction product__instruction--disabled">1 місяць прийому</p>
                 </div>
               </div>
+              <!-- надо проверять отсутствие этого элемента на мобиле и передавать пропс тру в кнопку и там отображать число -->
               <div class="product__price">
                 <span class="product__old-price">963 ₴</span>
                 <span class="product__current-price">489 ₴</span>
               </div>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-md-5 col-xxl-4">
                 <TheCounter />
               </div>
               <div class="col-md-7 col-xxl-8">
                 <TheButton />
               </div>
+              <div class="d-flex justify-content-center d-md-none">
+                <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
+                <div>
+                  <h5 class="product__instruction mb-1">В упаковці:</h5>
+                  <p class="product__instruction product__instruction--standard mb-1">120 капсул по 500 мг</p>
+                  <p class="product__instruction product__instruction--disabled">1 місяць прийому</p>
+                </div>
+              </div>
             </div>
+            <!-- <div class="product__info">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <div class="product__icon-wrap">
+                    <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
+                    <div>
+                      <h5 class="product__instruction mb-1">В упаковці:</h5>
+                      <p class="product__instruction product__instruction--standard mb-1">120 капсул по 500 мг</p>
+                      <p class="product__instruction product__instruction--disabled">1 місяць прийому</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5 offset-1 d-md-flex justify-content-end">
+                  <div class="product__price">
+                    <span class="product__old-price">963 ₴</span>
+                    <span class="product__current-price">489 ₴</span>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <TheCounter />
+                </div>
+                <div class="col-8">
+                  <TheButton />
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
         <div class="col-xxl-6">
