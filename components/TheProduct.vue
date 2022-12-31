@@ -135,10 +135,10 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-3">
+              <div class="col-md-5 col-xxl-4">
                 <TheCounter />
               </div>
-              <div class="col-8 offset-1">
+              <div class="col-md-7 col-xxl-8">
                 <TheButton />
               </div>
             </div>
