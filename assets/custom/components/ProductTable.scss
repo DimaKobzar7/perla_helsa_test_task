@@ -1,14 +1,3 @@
-table {
-  // -webkit-font-smoothing: antialiased;
-  // border-collapse: collapse;
-  // border-spacing: 0px;
-  // height: 1px;
-  // min-width: 100%;
-  // outline: none;
-  // table-layout: fixed;
-  // text-align: center;
-}
-
 .table {
   table-layout: fixed;
   width: 100%;
@@ -45,3 +34,8 @@ table {
     }
   }
 }
+
+// display: -webkit-box;
+// -webkit-line-clamp: 2;
+// -webkit-box-orient: vertical;
+// overflow: hidden;
