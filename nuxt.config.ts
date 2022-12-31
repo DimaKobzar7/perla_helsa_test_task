@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -32,6 +34,12 @@ export default defineNuxtConfig({
     // стили тянет но миксины не тянет
     // 'assets/custom/utils/_mixins.scss',
   ],
+  //   тут ошибку кидает
+  //   modules: ['swiper/vue'],
+//   эо не сработало
+  //   plugins: ['swiper/vue'],
+  //   plugins: [{ src: 'swiper/vue' }],
+  //   plugins: [{ src: 'swiper/vue/swiper-vue.js' }],
 
   //   app: {
   //     head: {

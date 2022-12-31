@@ -1,4 +1,10 @@
 <!-- the из названия наверное надо убрать так как это не еденичный компонент-->
+<!-- <script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+</script> -->
 <template>
   <section class="section">
     <div class="container">
@@ -79,7 +85,9 @@
           </div>
         </div>
         <div class="col-xxl-6">
-          <img src="../assets/img/slide1.png" alt="" />
+          <!-- <img src="../assets/img/slide1.png" alt="" /> -->
+          <TheSwiper />
+          <!-- <LazyTheSwiper /> -->
         </div>
       </div>
     </div>

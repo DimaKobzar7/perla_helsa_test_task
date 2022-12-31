@@ -40,6 +40,7 @@
 
 <script setup>
 let truncation = ref(null);
+// обрезка через сss https://nikolaus.by/blog/vyerstka/mnogotochie-v-kontse-stroki-na-css/
 // let screenwidth = ref(window.innerWidth);
 // console.log(screenwidth);
 
