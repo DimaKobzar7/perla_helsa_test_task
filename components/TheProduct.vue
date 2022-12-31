@@ -142,7 +142,7 @@
               <div class="col-md-7 col-xxl-8">
                 <TheButton />
               </div>
-              <div class="d-flex justify-content-center d-md-none">
+              <div class="d-flex justify-content-center d-md-none product__mt-3">
                 <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
                 <div>
                   <h5 class="product__instruction mb-1">В упаковці:</h5>
