@@ -1,0 +1,47 @@
+table {
+  // -webkit-font-smoothing: antialiased;
+  // border-collapse: collapse;
+  // border-spacing: 0px;
+  // height: 1px;
+  // min-width: 100%;
+  // outline: none;
+  // table-layout: fixed;
+  // text-align: center;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  //   border: 3px solid purple;
+
+  &__item {
+    border-bottom: 1px solid #1d1d1b;
+  }
+
+  &__title {
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: #00284f;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 1.44;
+    }
+  }
+
+  &__text {
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: #00284f;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 1.44;
+    }
+  }
+}

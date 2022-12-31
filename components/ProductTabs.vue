@@ -67,7 +67,8 @@
                     </tr>
                   </tbody>
                 </table> -->
-      <table class="table">
+      <ProductTable />
+      <!-- <table class="table">
         <tbody>
           <tr>
             <th scope="row">Склад:</th>
@@ -93,11 +94,11 @@
             <td>5.2 мкг 210 МО</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
     <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-      <p class="nav-tabs-text mb-4">Для профілактики, дорослим і дітям від 11 років – <span>4 капсули на день</span>, разом із їжею або одразу після. Бажано з іншими жирами для кращого засвоєння.</p>
-      <p class="nav-tabs-text"><span>Курс прийому:</span> 2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на Омега-3 із Тунця.</p>
+      <p class="nav-tabs-text mb-4">Для профілактики, дорослим і дітям від 11 років – <strong class="fst-italic">4 капсули на день</strong>, разом із їжею або одразу після. Бажано з іншими жирами для кращого засвоєння.</p>
+      <p class="nav-tabs-text"><strong>Курс прийому:</strong> 2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на Омега-3 із Тунця.</p>
     </div>
   </div>
 </template>
