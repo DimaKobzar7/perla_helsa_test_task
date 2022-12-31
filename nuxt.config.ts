@@ -20,6 +20,7 @@ export default defineNuxtConfig({
           //   src: '/bootstrap.bundle.min.js',
         },
       ],
+      //   style: ['assets/main.scss'],
       //   сюда наверное в качестве плагина ставить свайпер
       // инструкции https://nuxt.com/docs/api/configuration/nuxt-config
     },

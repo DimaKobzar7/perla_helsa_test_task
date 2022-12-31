@@ -22,6 +22,7 @@
 // эти 2 штуки это замена стилей и таблица
 @import '../node_modules/bootstrap/scss/tables';
 @import '../node_modules/bootstrap/scss/reboot';
+// @import '../node_modules/bootstrap/scss/buttons';
 
 // не импортит отсюда
 // надо  assets добавлять вперед чтобы понимал а просто относительный путь не работает так как вебпак должен увидеть папку assets

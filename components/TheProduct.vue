@@ -134,8 +134,14 @@
                 <span class="product__current-price">489 ₴</span>
               </div>
             </div>
-            <TheCounter />
-            <TheButton />
+            <div class="row">
+              <div class="col-3">
+                <TheCounter />
+              </div>
+              <div class="col-8 offset-1">
+                <TheButton />
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-xxl-6">
