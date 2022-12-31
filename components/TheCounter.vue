@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-const count = ref(0);
+const count = ref(1);
 
 // if (count < 0) {
 //   count = 0;
@@ -22,7 +22,7 @@ const plus = () => count.value++;
 // норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
 const minus = () => {
   // условие работает но ничего не происходит
-  if (count.value > 0) {
+  if (count.value > 1) {
     // console.log('gg');
     // count.value = 0;
     count.value--;
