@@ -15,17 +15,17 @@
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-      <p>Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.</p>
+      <p class="nav-tabs-text">Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.</p>
     </div>
     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-      <ul>
-        <li>Покращують стан шкіри: борються з акне та сприяють її регенерації</li>
-        <li>Зменшують випадіння волосся, стимулюють його ріст</li>
-        <li>Підіймають настрій та полегшують симптоми депресії</li>
-        <li>Зміцнюють імунітет: зменшують запальні процеси</li>
-        <li>Поліпшують роботу гормонів, серця і ЦНС</li>
-        <li>Зменшують болі в суглобах</li>
-        <li>Покращують метаболізм і роботу ШКТ</li>
+      <ul class="nav-tabs-list">
+        <li class="nav-tabs-list-item">Покращують стан шкіри: борються з акне та сприяють її регенерації</li>
+        <li class="nav-tabs-list-item">Зменшують випадіння волосся, стимулюють його ріст</li>
+        <li class="nav-tabs-list-item">Підіймають настрій та полегшують симптоми депресії</li>
+        <li class="nav-tabs-list-item">Зміцнюють імунітет: зменшують запальні процеси</li>
+        <li class="nav-tabs-list-item">Поліпшують роботу гормонів, серця і ЦНС</li>
+        <li class="nav-tabs-list-item">Зменшують болі в суглобах</li>
+        <li class="nav-tabs-list-item">Покращують метаболізм і роботу ШКТ</li>
       </ul>
     </div>
     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
@@ -96,8 +96,8 @@
       </table>
     </div>
     <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-      <p class="mb-4">Для профілактики, дорослим і дітям від 11 років – <span>4 капсули на день</span>, разом із їжею або одразу після. Бажано з іншими жирами для кращого засвоєння.</p>
-      <p><span>Курс прийому:</span> 2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на Омега-3 із Тунця.</p>
+      <p class="nav-tabs-text mb-4">Для профілактики, дорослим і дітям від 11 років – <span>4 капсули на день</span>, разом із їжею або одразу після. Бажано з іншими жирами для кращого засвоєння.</p>
+      <p class="nav-tabs-text"><span>Курс прийому:</span> 2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на Омега-3 із Тунця.</p>
     </div>
   </div>
 </template>

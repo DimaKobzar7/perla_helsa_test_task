@@ -1,25 +1,13 @@
 .nav {
   justify-content: space-between;
   margin-bottom: 12px;
-  //   gap: 28px;
-
-  //   @include onTablet {
-  //     gap: 72px;
-  //   }
-
-  //   @include onDesktop {
-  //     gap: 40px;
-  //   }
 
   &-tabs {
     border-bottom: 1px solid rgba(0, 40, 79, 0.3);
     --#{$prefix}nav-tabs-link-active-border-color: #00284f;
+
     .nav-link.active,
     .nav-item.show .nav-link {
-      //   font-weight: 700;
-      //   font-size: 17px;
-      //   line-height: 22px;
-
       text-transform: uppercase;
 
       color: #00284f;
@@ -45,6 +33,38 @@
       border-left: 0px;
       border-right: 0px;
       border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 1.31;
+
+      color: #00284f;
+
+      @include onTablet {
+        font-size: 18px;
+        line-height: 1.44;
+      }
+    }
+
+    &-list {
+      margin: 0;
+      &-item {
+        margin-bottom: 4px;
+        font-size: 16px;
+        line-height: 1.31;
+
+        color: #00284f;
+
+        @include onTablet {
+          font-size: 18px;
+          line-height: 1.44;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
     }
   }
 
