@@ -36,10 +36,11 @@ export default defineNuxtConfig({
   ],
   //   тут ошибку кидает
   //   modules: ['swiper/vue'],
-//   эо не сработало
+  //   эо не сработало
   //   plugins: ['swiper/vue'],
   //   plugins: [{ src: 'swiper/vue' }],
   //   plugins: [{ src: 'swiper/vue/swiper-vue.js' }],
+  //   plugins: [{ src: '~/plugins/swiper', mode: 'client' }],
 
   //   app: {
   //     head: {
