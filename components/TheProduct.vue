@@ -5,13 +5,18 @@
       <div class="row">
         <div class="col-xxl-6 order-xxl-0 order-1">
           <div class="product">
-            <div class="row">
-              <div class="col-6">
+            <!-- <div class="row align-items-center">
+              <div class="col-6 col-xxl-6">
                 <h1 class="product__title">Омега-3 <span class="product__subtitle">Тріска</span></h1>
               </div>
-              <div class="col-6">
+              <div class="col-5 col-xxl-6">
                 <div class="product__badge">з вітамінами А і D3</div>
               </div>
+            </div> -->
+            <div class="product__inner">
+              <h1 class="product__title">Омега-3 <span class="product__subtitle">Тріска</span></h1>
+
+              <div class="product__badge">з вітамінами А і D3</div>
             </div>
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">

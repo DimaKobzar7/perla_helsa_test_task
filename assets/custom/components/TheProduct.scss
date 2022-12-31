@@ -1,5 +1,6 @@
 .product {
   &__title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 25px;
     line-height: 32px;
@@ -7,6 +8,8 @@
     color: #00284f;
 
     @include onTablet {
+      margin-bottom: 0;
+
       font-size: 40px;
       font-weight: 500;
       line-height: 1.2;
@@ -26,7 +29,10 @@
   &__badge {
     padding: 8px 0;
 
-    font-size: 22px;
+    max-width: 306px;
+    width: 100%;
+
+    font-size: 16px;
     font-weight: 500;
     line-height: 1;
 
@@ -36,6 +42,25 @@
 
     background: #ffffff;
     border-radius: 50px;
+
+    @include onTablet {
+      font-size: 22px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+
+    @include onTablet {
+      align-items: center;
+      flex-direction: row;
+
+      margin-bottom: 32px;
+    }
   }
 
   &__info {
@@ -54,6 +79,7 @@
     }
   }
 
+  //не по центру надо а немного в бок иконку   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   &__icon {
     margin-right: 26px;
     width: 37px;
