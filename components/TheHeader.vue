@@ -19,7 +19,7 @@ import "../assets/custom/utils/_mixins.scss";
           </NuxtLink>
         </div>
 
-        <img src="../assets/svg/logo.svg" />
+        <img class="header__logo" src="../assets/svg/logo.svg" />
 
         <div class="header__icon-group">
           <!-- тут нужно тип для телефона загнать типо мейл ту -->

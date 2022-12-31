@@ -40,12 +40,35 @@
 
 <script setup>
 let truncation = ref(null);
+// let screenwidth = ref(window.innerWidth);
+// console.log(screenwidth);
 
 onMounted(() => {
+  //   const obj = reactive({
+  //     prop1: window.innerWidth,
+  //     prop2: 'prop2',
+  //   });
+  //   watch(
+  //     () => obj.prop1,
+  //     (prop1, prevProp1) => {
+  //       console.log('#######');
+  //       console.log('Lets watch:');
+  //       console.group();
+  //       console.log('obj.prop1: ' + prop1);
+  //       console.log('Old prop1: ' + prevProp1);
+  //       console.groupEnd();
+  //       console.group();
+  //       console.log('Prop2: ' + obj.prop2);
+  //       console.groupEnd();
+  //       console.log('End watch.');
+  //       console.log('#######');
+  //     }
+  //   );
+  //   console.log(screenwidth);
   let truncationText = truncation.value.textContent;
   //   console.log(truncationText.length > 83);
   //   почему то переменную оно не воспринимает
-  console.log(window.innerWidth);
+  //   console.log(window.innerWidth);
   //   вроде норм но надо перезагружать чтобы условие работало так как произошел рендер и window.innerWidth не меняется
   // и оно может и не надо так как пользователь не должен менять разрешения своего экрана
   if (window.innerWidth < 768) {
@@ -65,10 +88,16 @@ onMounted(() => {
   //   console.log(truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent);
   //   truncation.value.textContent = str + '...';
   //   truncation.value.textContent = truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent;
-  watch: {
-    window.innerWidth;
-  }
+
+  // created () {
+  //     console.log(window.innerWidth)
+  // }
 });
+// watch: {
+//         screenwidth(n, l) {
+//             console.log(n)
+//         }
+//     }
 
 // var str = truncation.value.textContent.slice(0, 100); //например макс 100 символов
 // var a = str.split(' ');

@@ -27,6 +27,21 @@
     }
   }
 
+  &__logo {
+    width: 120px;
+    height: 20px;
+
+    @include onTablet {
+      width: 150px;
+      height: 24px;
+    }
+
+    @include onDesktop {
+      width: 196px;
+      height: 32px;
+    }
+  }
+
   &__burger-menu {
     margin-right: 12px;
 
