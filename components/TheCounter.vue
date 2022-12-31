@@ -1,8 +1,12 @@
 <template>
   <div class="counter">
-    <button class="counter__btn" @click="minus">-</button>
+    <button class="counter__btn" @click="minus">
+      <img src="../assets/svg/minus.svg" alt="" />
+    </button>
     <div class="counter__number">{{ count }}</div>
-    <button class="counter__btn" @click="plus">+</button>
+    <button class="counter__btn" @click="plus">
+      <img src="../assets/svg/plus.svg" alt="" />
+    </button>
   </div>
 </template>
 
