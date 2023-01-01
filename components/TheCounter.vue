@@ -3,7 +3,9 @@
     <button class="counter__btn" @click="minus">
       <img src="../assets/svg/minus.svg" alt="" />
     </button>
-    <div class="counter__number">{{ props.count }}</div>
+    <!-- <div class="counter__number">{{ props.count }}</div> -->
+    <!-- <div class="counter__number">{{ props.count }}</div> -->
+    <input class="counter__number" type="text" :value="props.count" @input="props.inputChange" />
     <!-- <div class="counter__number">{{ count }}</div> -->
     <button class="counter__btn" @click="plus">
       <img src="../assets/svg/plus.svg" alt="" />
@@ -14,9 +16,14 @@
 <script setup>
 // const props = defineProps(['props']);
 // так работает как в каунтере так и в апе
-const props = defineProps(['count', 'plus', 'minus']);
+const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
+
+// let num = props.count;
+
+// console.log('num test', num);
 
 console.log('it`s Counter', props);
+console.log(props.inputChange);
 
 // ниже работало
 // const count = ref(1);

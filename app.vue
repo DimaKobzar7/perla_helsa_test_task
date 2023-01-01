@@ -26,11 +26,11 @@
     <!-- она и не нужна можео просто значение передать как строку но : превратит его в переменную -->
     <TheCap AirportData="test" :changingProp="testFunc" :change="changeProp" />
     {{ testFunc }}
-    {{count}}
+    {{ count }}
     <!-- <div class="container"> -->
     <!-- <NuxtWelcome /> -->
-    <TheHeader :count='count'/>
-    <TheProduct :count='count' :plus="plus" :minus="minus" />
+    <TheHeader :count="count" />
+    <TheProduct :count="count" :plus="plus" :minus="minus" :inputChange="inputChange" />
     <TheDelivery />
     <!-- </div> -->
   </main>
@@ -41,7 +41,14 @@
 const testFunc = ref(0);
 const count = ref(1);
 
-const plus = () => count.value++;
+// походу эти методы должны будут принимать значение велью
+const plus = (event) => {
+  // console.log(event.target.value);
+  // if (event.target.value) {
+  //     count.value = +event.target.value
+  // }
+  count.value++;
+};
 
 // норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
 const minus = () => {
@@ -54,6 +61,11 @@ const minus = () => {
   //   console.log('gg');
   //   console.log(count);
   //   count.value--;
+};
+
+const inputChange = (event) => {
+  count.value = +event.target.value;
+  console.log('it`s input change method');
 };
 
 // метод нажимается в длчернем компоненте но перерендер не происходит и изменение значения
