@@ -11,17 +11,14 @@ import { Navigation } from 'swiper';
 </script> -->
 
 <template>
-  <swiper
-    :slides-per-view="1"
-    :space-between="50"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
-    :navigation="{
+  <!-- это типо кастомных элементов для навигации но я не знаю как ими управлять -->
+  <!-- поэтому просто navigation позволяет свайперу самому сделать стрелки с навигацией и они как дивы сами появятся -->
+  <!-- :navigation="{
       prevEl: prev,
       nextEl: next,
-    }"
-    :modules="modules"
-  >
+    }" -->
+  <!-- :space-between="50" -->
+  <swiper :slides-per-view="1" :space-between="100" @swiper="onSwiper" @slideChange="onSlideChange" navigation :modules="modules">
     <swiper-slide>
       <img src="../assets/img/slide1.png" alt="slide1" />
     </swiper-slide>
@@ -38,14 +35,18 @@ import { Navigation } from 'swiper';
       <img src="../assets/img/slide5.png" alt="slide5" />
     </swiper-slide>
   </swiper>
-  <div ref="prev" class="swiper-button-prev">prev</div>
-  <div ref="next" class="swiper-button-next">next</div>
+  <!-- при перезагрузке все равно появляються стандартные синие кнопки хоть и на секунду -->
+  <!-- <div ref="prev" class="swiper-button-prev">prev</div>
+  <div ref="next" class="swiper-button-next">next</div> -->
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// и без этого работает
+// import 'swiper/scss';
+// import 'swiper/scss/navigation';
 import { Navigation } from 'swiper';
 
 export default {
