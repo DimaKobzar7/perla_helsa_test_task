@@ -20,17 +20,50 @@
     <!-- сейчас нужно делать <script setup></script>  -->
 
     <!-- как прокинуть пропсы? мне надо из этого компоненета перекинуть колбек в компонент карточки а из карточки в кнопку и потом все это поднять до этого компонента и кинуть в хедер  -->
-    <TheCap />
-
+    <!-- это была простая передача пропса -->
+    <!-- двоеточие :func позволяет делать динамику и передавать переменные -->
+    <!-- деструктуризация не работает -->
+    <!-- она и не нужна можео просто значение передать как строку но : превратит его в переменную -->
+    <TheCap AirportData="test" :changingProp="testFunc" :change="changeProp" />
+    {{ testFunc }}
+    {{count}}
     <!-- <div class="container"> -->
     <!-- <NuxtWelcome /> -->
-    <TheHeader />
-    <TheProduct />
+    <TheHeader :count='count'/>
+    <TheProduct :count='count' :plus="plus" :minus="minus" />
     <TheDelivery />
     <!-- </div> -->
   </main>
 </template>
 
+<script setup>
+// const props = defineProps(['AirportData']);
+const testFunc = ref(0);
+const count = ref(1);
+
+const plus = () => count.value++;
+
+// норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
+const minus = () => {
+  // условие работает но ничего не происходит
+  if (count.value > 1) {
+    // console.log('gg');
+    // count.value = 0;
+    count.value--;
+  }
+  //   console.log('gg');
+  //   console.log(count);
+  //   count.value--;
+};
+
+// метод нажимается в длчернем компоненте но перерендер не происходит и изменение значения
+const changeProp = () => {
+  testFunc.value++;
+  console.log('clicked');
+};
+
+// console.log('it`s App', testFunc.value);
+</script>
 <!-- <style lang="scss" src="./assets/main.scss"></style> -->
 
 <!-- <script src="@/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->

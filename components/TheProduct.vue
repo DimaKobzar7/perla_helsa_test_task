@@ -42,7 +42,7 @@ import 'swiper/css';
             </div>
             <div class="row align-items-center">
               <div class="col-md-5 col-xxl-4">
-                <TheCounter />
+                <TheCounter :count='props.count' :plus="props.plus" :minus="props.minus"/>
               </div>
               <div class="col-md-7 col-xxl-8">
                 <TheButton />
@@ -94,6 +94,11 @@ import 'swiper/css';
   </section>
 </template>
 
+<script setup>
+const props = defineProps(['count', 'plus', 'minus']);
+
+console.log('it`s Product', props);
+</script>
 <!-- <style>
 /* @font-face {
   font-family: 'Onest', sans-serif;

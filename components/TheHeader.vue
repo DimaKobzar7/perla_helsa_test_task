@@ -30,7 +30,7 @@ import "../assets/custom/utils/_mixins.scss";
 
           <NuxtLink class="header__cart" to="#">
             <img class="header__icon" src="../assets/svg/cart.svg" />
-            <div class="header__cart-counter">0</div>
+            <div class="header__cart-counter">{{props.count}}</div>
           </NuxtLink>
         </div>
       </div>
@@ -45,6 +45,12 @@ import "../assets/custom/utils/_mixins.scss";
     </div>
   </div>
 </template>
+
+<script setup>
+const props = defineProps(['count']);
+
+console.log('It`s Header', props);
+</script>
 
 <!-- из другой папки пока стили не тянет -->
 <!-- из другой папки пока стили не тянет -->

@@ -20,8 +20,47 @@
         <a class="nav-link disabled">Disabled</a>
       </li>
     </ul> -->
+    <!--props.change метод в консоле работает но не меняет свойствоили меняет но родитель не перерендывается и консоль не меняется -->
+    <!-- работаетт!!!! если вывести элеменнт в родителе то будет перерендер и все гуд -->
+    <button @click="props.change">Test</button>
   </div>
 </template>
+
+<script setup>
+// const props = defineProps({
+//   data: {
+//     type: [Object],
+//   }
+// })
+const props = defineProps(['AirportData', 'changingProp', 'change']);
+// const props2 = defineProps(['AirportData']);
+// console.log('it`s cap', props);
+// console.log(props.changingProp);
+// console.log(props2);
+// консоль лог активирует функцию и она вроде работает а простой вызов этого не делает
+// но они работают когда вместе включены
+// console.log(props.change());
+// пока изменения из дочернего компонента в радительский не увенчались успехом
+// console.log('before use callback', props);
+// props.change();
+// let changeTest = props.change();
+// console.log(changeTest);
+// changeTest();
+// console.log('after use callback', props);
+// просто так изменить нельзя оно говорит что оно для чтения только
+// props.func = 3;
+// props.func.value++;
+// он работает
+const testMethod = () => {
+  console.log('it`s test method');
+};
+
+// опять ошибка что только для чтения
+const testMethodWichChageProp = () => {
+  props.changingProp++;
+  console.log(props.changingProp);
+};
+</script>
 <!--
  поменяй название
 <style>

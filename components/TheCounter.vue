@@ -3,7 +3,8 @@
     <button class="counter__btn" @click="minus">
       <img src="../assets/svg/minus.svg" alt="" />
     </button>
-    <div class="counter__number">{{ count }}</div>
+    <div class="counter__number">{{ props.count }}</div>
+    <!-- <div class="counter__number">{{ count }}</div> -->
     <button class="counter__btn" @click="plus">
       <img src="../assets/svg/plus.svg" alt="" />
     </button>
@@ -11,26 +12,33 @@
 </template>
 
 <script setup>
-const count = ref(1);
+// const props = defineProps(['props']);
+// так работает как в каунтере так и в апе
+const props = defineProps(['count', 'plus', 'minus']);
+
+console.log('it`s Counter', props);
+
+// ниже работало
+// const count = ref(1);
 
 // if (count < 0) {
 //   count = 0;
 // }
 
-const plus = () => count.value++;
+// const plus = () => count.value++;
 
 // норм ли такое делать или можно как то одним методом и использовать предедущий стейт как в реакте
-const minus = () => {
-  // условие работает но ничего не происходит
-  if (count.value > 1) {
-    // console.log('gg');
-    // count.value = 0;
-    count.value--;
-  }
-  //   console.log('gg');
-  //   console.log(count);
-  //   count.value--;
-};
+// const minus = () => {
+//   // условие работает но ничего не происходит
+//   if (count.value > 1) {
+//     // console.log('gg');
+//     // count.value = 0;
+//     count.value--;
+//   }
+//   //   console.log('gg');
+//   //   console.log(count);
+//   //   count.value--;
+// };
 </script>
 
 <!-- <style>
