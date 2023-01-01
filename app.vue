@@ -45,12 +45,12 @@
 //   message2: 'hello2!',
 // });
 
-const msg = ref('Hello World!');
-const updateMsg = (newValue) => (msg.value = newValue);
-provide('msgKey', {
-  msg,
-  updateMsg,
-});
+// const msg = ref('Hello World!');
+// const updateMsg = (newValue) => (msg.value = newValue);
+// provide('msgKey', {
+//   msg,
+//   updateMsg,
+// });
 
 const testFunc = ref(0);
 const count = ref(1);
@@ -70,8 +70,6 @@ const plus = (event) => {
 const minus = () => {
   // условие работает но ничего не происходит
   if (count.value > 1) {
-    // console.log('gg');
-    // count.value = 0;
     count.value--;
   }
   //   console.log('gg');
@@ -94,6 +92,15 @@ const inputChange = (event) => {
   //   console.log('it`s input change method');
 };
 
+// const msg = ref('Hello World!');
+// const updateMsg = (newValue) => (msg.value = newValue);
+provide('msgKey', {
+  count,
+  plus,
+  minus,
+  inputChange,
+});
+
 // метод нажимается в длчернем компоненте но перерендер не происходит и изменение значения
 const changeProp = () => {
   testFunc.value++;
@@ -111,91 +118,3 @@ export default {
   },
 };
 </script> -->
-
-<!-- <style lang="scss" src="./assets/main.scss"></style> -->
-
-<!-- <script src="@/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-
-<!-- <style lang="scss">
-// @import './assets/main.scss';
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-body {
-  margin: 0;
-  font-family: Onest;
-  font-weight: 400;
-  min-height: 100vh;
-  overflow: hidden;
-
-  background: linear-gradient(180deg, rgba(200, 224, 149, 0.8) -5.17%, rgba(221, 238, 239, 0.8) 47.96%, rgba(255, 255, 255, 0.8) 100%);
-}
-</style> -->
-
-<!-- <script setup>
-import { Modal } from 'bootstrap';
-const { $bootstrap } = useNuxtApp();
-let modal;
-onMounted(() => {
-  modal = new $bootstrap.Modal(document.getElementById('modal-main'));
-});
-const toggle = () => {
-  modal.toggle();
-};
-</script> -->
-
-<!-- это работает -->
-<!-- <script setup>
-useHead({
-  title: 'Perla Helsa',
-  //   link: [
-  //     {
-  //       href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
-  //       rel: 'stylesheet',
-  //       integrity: 'sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65',
-  //       crossorigin: 'anonymous',
-  //     },
-  //   ],
-  script: [
-    {
-      src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js',
-      integrity: 'sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V',
-      crossorigin: 'anonymous',
-    },
-  ],
-});
-</script> -->
-<!-- <script>
-export default {
-  //   head() {
-  //     return {
-  //       // не работает у вкладки имя не меняется
-  //       title: 'Perla Helsa',
-  //     };
-  //   },
-
-//   useHead() {
-//     return {
-//       title: 'Perla Helsa',
-//       description: 'What a lovely page.',
-//       link: [
-//         {
-//           href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
-//           rel: 'stylesheet',
-//           integrity: 'sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65',
-//           crossorigin: 'anonymous',
-//         },
-//       ],
-//     };
-//   },
-};
-</script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->

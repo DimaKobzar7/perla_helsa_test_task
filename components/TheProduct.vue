@@ -97,7 +97,7 @@ import 'swiper/css';
 <script setup>
 const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
 
-console.log('it`s Product', props);
+// console.log('it`s Product', props);
 </script>
 <!-- <style>
 /* @font-face {

@@ -6,7 +6,10 @@
     <!-- <div class="counter__number">{{ props.count }}</div> -->
     <!-- <div class="counter__number">{{ props.count }}</div> -->
     <!-- @input="props.inputChange" -->
-    <input class="counter__number" type="text" :value="props.count" @input="props.inputChange" />
+    <!-- версия с прокидыванием пропсов везде -->
+    <!-- <input class="counter__number" type="text" :value="props.count" @input="props.inputChange" /> -->
+    <!-- странно почему тут count.value не понадобился а просто count проканал -->
+    <input class="counter__number" type="text" :value="count" @input="inputChange" />
     <!-- <div class="counter__number">{{ count }}</div> -->
     <button class="counter__btn" @click="plus">
       <img src="../assets/svg/plus.svg" alt="" />
@@ -15,18 +18,22 @@
 </template>
 
 <script setup>
-// const props = defineProps(['props']);
-// так работает как в каунтере так и в апе
-const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
+const { count, plus, minus, inputChange } = inject('msgKey');
+
+console.log(count);
+console.log(count.value);
+
+// рабочая куча пропсная версия
+// const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
 
 // let num = props.count;
 
 // console.log('num test', num);
 
-console.log('it`s Counter', props);
+// console.log('it`s Counter', props);
 // console.log(props.inputChange);
 
-// ниже работало
+// ниже работало локально в этом компоненте
 // const count = ref(1);
 
 // if (count < 0) {
@@ -50,19 +57,17 @@ console.log('it`s Counter', props);
 
 // console.log(inject(['message2']));
 // это работает!!
-const { msg, updateMsg } = inject('msgKey');
-
-console.log(msg.value);
+// const { msg, updateMsg } = inject('msgKey');
 </script>
 
-<script>
+<!-- <script>
 export default {
   inject: ['message'],
   created() {
     console.log(this.message, 'from app to counter'); // injected value
   },
 };
-</script>
+</script> -->
 
 <!-- <style>
 .counter {
