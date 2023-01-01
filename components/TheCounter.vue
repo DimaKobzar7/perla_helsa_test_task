@@ -5,6 +5,7 @@
     </button>
     <!-- <div class="counter__number">{{ props.count }}</div> -->
     <!-- <div class="counter__number">{{ props.count }}</div> -->
+    <!-- @input="props.inputChange" -->
     <input class="counter__number" type="text" :value="props.count" @input="props.inputChange" />
     <!-- <div class="counter__number">{{ count }}</div> -->
     <button class="counter__btn" @click="plus">
@@ -23,7 +24,7 @@ const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
 // console.log('num test', num);
 
 console.log('it`s Counter', props);
-console.log(props.inputChange);
+// console.log(props.inputChange);
 
 // ниже работало
 // const count = ref(1);
