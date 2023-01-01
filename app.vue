@@ -25,12 +25,12 @@
     <!-- деструктуризация не работает -->
     <!-- она и не нужна можео просто значение передать как строку но : превратит его в переменную -->
     <TheCap AirportData="test" :changingProp="testFunc" :change="changeProp" />
-    {{ testFunc }}
-    {{ count }}
+
     <!-- <div class="container"> -->
     <!-- <NuxtWelcome /> -->
+    <!-- наверное как пропс оставлю покажу что я и просты пропсы знаю -->
     <TheHeader :count="count" />
-    <TheProduct :count="count" :plus="plus" :minus="minus" :inputChange="inputChange" />
+    <TheProduct />
     <TheDelivery />
     <!-- </div> -->
   </main>
@@ -39,12 +39,6 @@
 <!-- супер статья про передачу пропсов в нужный компонент https://habr.com/ru/post/668072/ -->
 
 <script setup>
-// const props = defineProps(['AirportData']);
-// provide('text');
-// provide({
-//   message2: 'hello2!',
-// });
-
 // const msg = ref('Hello World!');
 // const updateMsg = (newValue) => (msg.value = newValue);
 // provide('msgKey', {
@@ -72,9 +66,6 @@ const minus = () => {
   if (count.value > 1) {
     count.value--;
   }
-  //   console.log('gg');
-  //   console.log(count);
-  //   count.value--;
 };
 
 const inputChange = (event) => {
@@ -85,11 +76,8 @@ const inputChange = (event) => {
   }
 
   console.log(event.data, event.target.value);
-  //   console.log(event.code);
-  //   console.log(event.key);
-  //   console.log(stringWithNoWhitespace);
+
   count.value = +event.target.value;
-  //   console.log('it`s input change method');
 };
 
 // const msg = ref('Hello World!');

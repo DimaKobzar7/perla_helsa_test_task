@@ -1,51 +1,22 @@
 <!-- надо менять название так как компонент не уникален -->
 <template>
   <!-- возмможно придется просто взять класс бутстрапа и его переделать -->
-  <button class="btn btn--success">До кошика</button>
+  <!-- <button class="btn btn--success">До кошика</button> -->
+  <!-- <button class="btn btn--success">{{ window.innerWidth < 768 ? props.currentPrice : `До кошика -` + props.currentPrice }}</button> -->
+  <button class="btn btn--success">{{ test }}</button>
 </template>
 
-<!-- <style>
-.btn {
-  padding: 16px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
+<script setup>
+const props = defineProps(['currentPrice']);
 
-  color: #ffffff;
+let test = ref('До кошика');
 
-  text-align: center;
-
-  border-radius: 40px;
-
-  outline: none;
-
-  border: none;
-}
-
-.btn--success {
-  background-color: #69c522;
-}
-</style> -->
-
-<!-- <style lang="scss">
-.btn {
-  padding: 16px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-
-  color: #ffffff;
-
-  text-align: center;
-
-  border-radius: 40px;
-
-  outline: none;
-
-  border: none;
-
-  &--success {
-    background-color: #69c522;
+console.log(props);
+onMounted(() => {
+  if (window.innerWidth < 768) {
+    test.value += ' - ' + props.currentPrice;
+    // console.log('768');
+    // console.log(test);
   }
-}
-</style> -->
+});
+</script>

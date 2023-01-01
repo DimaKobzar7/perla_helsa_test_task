@@ -22,7 +22,7 @@
     </ul> -->
     <!--props.change метод в консоле работает но не меняет свойствоили меняет но родитель не перерендывается и консоль не меняется -->
     <!-- работаетт!!!! если вывести элеменнт в родителе то будет перерендер и все гуд -->
-    <button @click="props.change">Test</button>
+    <!-- <button @click="props.change">Test</button> -->
   </div>
 </template>
 
@@ -32,7 +32,7 @@
 //     type: [Object],
 //   }
 // })
-const props = defineProps(['AirportData', 'changingProp', 'change']);
+// const props = defineProps(['AirportData', 'changingProp', 'change']);
 // const props2 = defineProps(['AirportData']);
 // console.log('it`s cap', props);
 // console.log(props.changingProp);

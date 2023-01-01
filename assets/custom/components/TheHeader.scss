@@ -71,18 +71,18 @@
   &__cart-counter {
     position: absolute;
     top: 0;
-    left: 30px;
+    left: 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 26px;
-    height: 26px;
+    width: 14px;
+    height: 14px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
 
     color: #1d1d1b;
 
@@ -93,6 +93,17 @@
     letter-spacing: 0.04em;
 
     background-color: #f5f352;
+
+    @include onTablet {
+      left: 30px;
+
+      width: 26px;
+      height: 26px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+    }
   }
 
   &__bottom {

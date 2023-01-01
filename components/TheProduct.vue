@@ -37,15 +37,16 @@ import 'swiper/css';
               <!-- надо проверять отсутствие этого элемента на мобиле и передавать пропс тру в кнопку и там отображать число -->
               <div class="product__price">
                 <span class="product__old-price">963 ₴</span>
-                <span class="product__current-price">489 ₴</span>
+                <span class="product__current-price">{{ currentPrice }}</span>
               </div>
             </div>
             <div class="row align-items-center">
               <div class="col-md-5 col-xxl-4">
-                <TheCounter :count="props.count" :plus="props.plus" :minus="props.minus" :inputChange="props.inputChange" />
+                <!-- <TheCounter :count="props.count" :plus="props.plus" :minus="props.minus" :inputChange="props.inputChange" /> -->
+                <TheCounter />
               </div>
               <div class="col-md-7 col-xxl-8">
-                <TheButton />
+                <TheButton :currentPrice="currentPrice" />
               </div>
               <div class="d-flex justify-content-center d-md-none product__mt-3">
                 <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
@@ -94,11 +95,18 @@ import 'swiper/css';
   </section>
 </template>
 
+<!-- это на что то надо поменять -->
 <script setup>
-const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
+const currentPrice = '489 ₴';
 
 // console.log('it`s Product', props);
 </script>
+
+<!-- <script setup>
+const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
+
+// console.log('it`s Product', props);
+</script> -->
 <!-- <style>
 /* @font-face {
   font-family: 'Onest', sans-serif;
