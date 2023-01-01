@@ -47,6 +47,21 @@ console.log('it`s Counter', props);
 //   //   console.log(count);
 //   //   count.value--;
 // };
+
+// console.log(inject(['message2']));
+// это работает!!
+const { msg, updateMsg } = inject('msgKey');
+
+console.log(msg.value);
+</script>
+
+<script>
+export default {
+  inject: ['message'],
+  created() {
+    console.log(this.message, 'from app to counter'); // injected value
+  },
+};
 </script>
 
 <!-- <style>
