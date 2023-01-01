@@ -68,6 +68,33 @@
     }
   }
 
+  &__cart-counter {
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+
+    color: #1d1d1b;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    letter-spacing: 0.04em;
+
+    background-color: #f5f352;
+  }
+
   &__bottom {
     display: none;
 

@@ -20,6 +20,7 @@ export default defineNuxtConfig({
           src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js',
           //   type: 'text/javascript',
           //   src: '/bootstrap.bundle.min.js',
+          // src: 'bootstrap/dist/js/bootstrap.bundle.min.js',
         },
       ],
       //   style: ['assets/main.scss'],
@@ -34,6 +35,12 @@ export default defineNuxtConfig({
     // стили тянет но миксины не тянет
     // 'assets/custom/utils/_mixins.scss',
   ],
+  // это тоже не работает
+  // script: [
+  //   {
+  //     src: 'bootstrap/dist/js/bootstrap.bundle.min.js',
+  //   },
+  // ],
   //   тут ошибку кидает
   //   modules: ['swiper/vue'],
   //   эо не сработало

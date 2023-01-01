@@ -30,6 +30,7 @@ import "../assets/custom/utils/_mixins.scss";
 
           <NuxtLink class="header__cart" to="#">
             <img class="header__icon" src="../assets/svg/cart.svg" />
+            <div class="header__cart-counter">0</div>
           </NuxtLink>
         </div>
       </div>
