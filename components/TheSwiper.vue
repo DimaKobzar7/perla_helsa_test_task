@@ -18,9 +18,22 @@ import { Navigation } from 'swiper';
       nextEl: next,
     }" -->
   <!-- :space-between="50" -->
-  <swiper :slides-per-view="1" :space-between="100" @swiper="onSwiper" @slideChange="onSlideChange" navigation :modules="modules">
+  <swiper
+    :slides-per-view="1"
+    :space-between="100"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+    :navigation="{
+      prevEl: prev,
+      nextEl: next,
+    }"
+    :modules="modules"
+  >
     <swiper-slide>
       <img src="../assets/img/slide1.png" alt="slide1" />
+      <!-- сайт с иконками https://www.reshot.com/free-svg-icons/item/stick-head-right-P9BVQKNYFR/ -->
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z" style="fill: #1c1b1e" /></svg> -->
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 0-1.414l4-4a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293A1 1 0 0 1 14 17z" style="fill: #1c1b1e" /></svg> -->
     </swiper-slide>
     <swiper-slide>
       <img src="../assets/img/slide2.png" alt="slide2" />
@@ -34,10 +47,20 @@ import { Navigation } from 'swiper';
     <swiper-slide>
       <img src="../assets/img/slide5.png" alt="slide5" />
     </swiper-slide>
+    <div ref="prev" class="swiper-button-prev">
+      <svg class="d-xxl-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 0-1.414l4-4a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293A1 1 0 0 1 14 17z" style="fill: #1c1b1e" /></svg>
+    </div>
+    <div ref="next" class="swiper-button-next">
+      <svg class="d-xxl-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z" style="fill: #1c1b1e" /></svg>
+    </div>
   </swiper>
   <!-- при перезагрузке все равно появляються стандартные синие кнопки хоть и на секунду -->
-  <!-- <div ref="prev" class="swiper-button-prev">prev</div>
-  <div ref="next" class="swiper-button-next">next</div> -->
+  <!-- <div ref="prev" class="swiper-button-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z" style="fill: #1c1b1e" /></svg>
+  </div>
+  <div ref="next" class="swiper-button-next">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 0-1.414l4-4a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293A1 1 0 0 1 14 17z" style="fill: #1c1b1e" /></svg>
+  </div> -->
 </template>
 
 <script>
