@@ -25,6 +25,10 @@
 // @import '../node_modules/bootstrap/scss/buttons';
 // @import '../node_modules/bootstrap/scss/helpers/text-truncation';
 
+// Swiper
+@import '../node_modules/swiper/swiper.scss';
+@import '../node_modules/swiper/modules/navigation/navigation.scss';
+
 // не импортит отсюда
 // надо  assets добавлять вперед чтобы понимал а просто относительный путь не работает так как вебпак должен увидеть папку assets
 // но все равно не видит миксин
