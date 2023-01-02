@@ -37,6 +37,7 @@
 </template>
 
 <!-- супер статья про передачу пропсов в нужный компонент https://habr.com/ru/post/668072/ -->
+<!-- дока про provide и inject() оно как юз контекст в реакте https://vuejs.org/api/composition-api-dependency-injection.html#provide -->
 
 <script setup>
 // const msg = ref('Hello World!');
