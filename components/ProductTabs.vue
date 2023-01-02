@@ -1,332 +1,62 @@
 <template>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button
-        class="nav-link active"
-        id="home-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#home-tab-pane"
-        type="button"
-        role="tab"
-        aria-controls="home-tab-pane"
-        aria-selected="true"
-      >
-        ОПИС
-      </button>
+      <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" aria-selected="true">ОПИС</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="profile-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#profile-tab-pane"
-        type="button"
-        role="tab"
-        aria-controls="profile-tab-pane"
-        aria-selected="false"
-      >
-        КОРИСТЬ
-      </button>
+      <button class="nav-link" id="benefit-tab" data-bs-toggle="tab" data-bs-target="#benefit" type="button" aria-selected="false">КОРИСТЬ</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="contact-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#contact-tab-pane"
-        type="button"
-        role="tab"
-        aria-controls="contact-tab-pane"
-        aria-selected="false"
-      >
-        ІНГРЕДІЄНТИ
-      </button>
+      <button class="nav-link" id="ingredient-tab" data-bs-toggle="tab" data-bs-target="#ingredient" type="button" aria-selected="false">ІНГРЕДІЄНТИ</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="disabled-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#disabled-tab-pane"
-        type="button"
-        role="tab"
-        aria-controls="disabled-tab-pane"
-        aria-selected="false"
-      >
-        СПОСІБ ЗАСТОСУВАННЯ
-      </button>
+      <button class="nav-link" id="application-method-tab" data-bs-toggle="tab" data-bs-target="#application-method" type="button" aria-selected="false">СПОСІБ ЗАСТОСУВАННЯ</button>
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
-    <div
-      class="tab-pane fade show active"
-      id="home-tab-pane"
-      role="tabpanel"
-      aria-labelledby="home-tab"
-      tabindex="0"
-    >
-      <!-- <p ref="truncation" class="nav-tabs-text">Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.</p> -->
+    <div class="tab-pane fade show active" id="description" tabindex="0">
       <p ref="truncation" class="nav-tabs-text">{{ truncationText }}</p>
-      <!-- <p ref="truncation" class="nav-tabs-text">{{ showMoreText2() }}</p> -->
-      <span ref="showMore" class="nav-tabs-info" @click="showMoreText"
-        >Дізнатись більше</span
-      >
+
+      <span ref="showMore" class="nav-tabs-info" @click="showMoreText">Дізнатись більше</span>
     </div>
-    <div
-      class="tab-pane fade"
-      id="profile-tab-pane"
-      role="tabpanel"
-      aria-labelledby="profile-tab"
-      tabindex="0"
-    >
+    <div class="tab-pane fade" id="benefit" tabindex="0">
       <ul class="nav-tabs-list">
-        <li class="nav-tabs-list-item">
-          Покращують стан шкіри: борються з акне та сприяють її регенерації
-        </li>
-        <li class="nav-tabs-list-item">
-          Зменшують випадіння волосся, стимулюють його ріст
-        </li>
-        <li class="nav-tabs-list-item">
-          Підіймають настрій та полегшують симптоми депресії
-        </li>
-        <li class="nav-tabs-list-item">
-          Зміцнюють імунітет: зменшують запальні процеси
-        </li>
-        <li class="nav-tabs-list-item">
-          Поліпшують роботу гормонів, серця і ЦНС
-        </li>
+        <li class="nav-tabs-list-item">Покращують стан шкіри: борються з акне та сприяють її регенерації</li>
+        <li class="nav-tabs-list-item">Зменшують випадіння волосся, стимулюють його ріст</li>
+        <li class="nav-tabs-list-item">Підіймають настрій та полегшують симптоми депресії</li>
+        <li class="nav-tabs-list-item">Зміцнюють імунітет: зменшують запальні процеси</li>
+        <li class="nav-tabs-list-item">Поліпшують роботу гормонів, серця і ЦНС</li>
         <li class="nav-tabs-list-item">Зменшують болі в суглобах</li>
         <li class="nav-tabs-list-item">Покращують метаболізм і роботу ШКТ</li>
       </ul>
     </div>
-    <div
-      class="tab-pane fade"
-      id="contact-tab-pane"
-      role="tabpanel"
-      aria-labelledby="contact-tab"
-      tabindex="0"
-    >
+    <div class="tab-pane fade" id="ingredient" tabindex="0">
       <ProductTable />
     </div>
-    <div
-      class="tab-pane fade"
-      id="disabled-tab-pane"
-      role="tabpanel"
-      aria-labelledby="disabled-tab"
-      tabindex="0"
-    >
+    <div class="tab-pane fade" id="application-method" tabindex="0">
       <p class="nav-tabs-text mb-4">
         Для профілактики, дорослим і дітям від 11 років –
-        <strong class="fst-italic">4 капсули на день</strong>, разом із їжею або
-        одразу після. Бажано з іншими жирами для кращого засвоєння.
+        <strong class="fst-italic">4 капсули на день</strong>, разом із їжею або одразу після. Бажано з іншими жирами для кращого засвоєння.
       </p>
-      <p class="nav-tabs-text">
-        <strong>Курс прийому:</strong> 2-3 місяці, після чого зробити перерву
-        1-2 місяці або перейти на Омега-3 із Тунця.
-      </p>
+      <p class="nav-tabs-text"><strong>Курс прийому:</strong> 2-3 місяці, після чого зробити перерву 1-2 місяці або перейти на Омега-3 із Тунця.</p>
     </div>
   </div>
 </template>
 
 <script setup>
 let showMore = ref(null);
-let truncationText = ref(
-  "Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету."
-);
-// console.log(truncationText.value);
-// обрезка через сss https://nikolaus.by/blog/vyerstka/mnogotochie-v-kontse-stroki-na-css/
-// let screenwidth = ref(window.innerWidth);
-// console.log(screenwidth);
+let truncationText = ref("Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.");
 let baseText = truncationText.value;
 
 const showMoreText = () => {
-  //   console.log('gg');
   truncationText.value = baseText;
-  //   console.log(truncation.value);
-  showMore.value.style.display = "none";
+
+  showMore.value.style.display = 'none';
 };
-
-// тут просто ивент передаеться а не параметры
-// const showMoreText = () => {
-//   //   console.log(rr);
-//   truncation = test;
-//   console.log('object');
-// };
-
-let width = ref(null);
-
-// const showMoreText2 = () => {
-//   // console.log(window.innerWidth);
-
-//   width = window.innerWidth;
-
-//   console.log(width);
-//   if (width < 768) {
-//     truncationText.value =
-//       truncationText.value.length > 83
-//         ? `${truncationText.value.slice(0, 81)}…`
-//         : truncationText;
-//   }
-
-//   return truncationText;
-// };
-
-// watch(count, (count, prevCount) => {
-//   console.log(count, prevCount);
-//   // if (count != prevCount) {
-//   //   savedCount = prevCount;
-//   // }
-//   //   savedCount = prevCount;
-// });
-
-// onMounted(() => {
-//   window.addEventListener("resize", showMoreText2);
-// });
-
-// onUnmounted(() => {
-//   window.removeEventListener("resize", showMoreText2);
-// });
-
-// onMounted(() => window.addEventListener("resize", showMoreText2));
-
-// onUnmounted(() => window.removeEventListener("resize", showMoreText2));
-
-// const showMoreText2 = () => {
-//   // console.log(window.innerWidth);
-
-//   width = window.innerWidth;
-
-//   console.log(width);
-//   if (width < 768) {
-//     truncationText.value =
-//       truncationText.value.length > 83
-//         ? `${truncationText.value.slice(0, 81)}…`
-//         : truncationText;
-//   }
-
-//   return truncationText;
-// };
-
-// const showMoreText2 = () => {
-//   console.log(window.innerWidth);
-
-//   // console.log(window.innerWidth);
-//   if (window.innerWidth < 768) {
-//     truncationText.value =
-//       truncationText.value.length > 83
-//         ? `${truncationText.value.slice(0, 81)}…`
-//         : truncationText;
-//   }
-
-//   return truncationText;
-// };
 
 onMounted(() => {
   if (window.innerWidth < 768) {
-    truncationText.value =
-      truncationText.value.length > 83
-        ? `${truncationText.value.slice(0, 81)}…`
-        : truncationText;
+    truncationText.value = truncationText.value.length > 83 ? `${truncationText.value.slice(0, 81)}…` : truncationText;
   }
-  // let text = reactive({
-  //   prop1: window.innerWidth,
-  // });
-  // watch( () => {
-  //     console.log(count, prevCount);
-  //     // if (count != prevCount) {
-  //     //   savedCount = prevCount;
-  //     // }
-  //   });
-  // watch(text.prop1, (count, prevCount) => {
-  //   console.log(count, prevCount);
-  // });
 });
-
-// watch(count, (count, prevCount) => {
-//   console.log( count,  prevCount);
-// })
-
-// watchEffect(() => {
-//   console.log(window.innerWidth);
-// });
-
-// console.log(t);
-// onMounted(() => {
-//   //   const obj = reactive({
-//   //     prop1: window.innerWidth,
-//   //     prop2: 'prop2',
-//   //   });
-//   //   watch(
-//   //     () => obj.prop1,
-//   //     (prop1, prevProp1) => {
-//   //       console.log('#######');
-//   //       console.log('Lets watch:');
-//   //       console.group();
-//   //       console.log('obj.prop1: ' + prop1);
-//   //       console.log('Old prop1: ' + prevProp1);
-//   //       console.groupEnd();
-//   //       console.group();
-//   //       console.log('Prop2: ' + obj.prop2);
-//   //       console.groupEnd();
-//   //       console.log('End watch.');
-//   //       console.log('#######');
-//   //     }
-//   //   );
-//   //   console.log(screenwidth);
-//   let truncationText = truncation.value.textContent;
-//   let r = showMoreText;
-//   //   console.log(r);
-//   //   const showMoreText = () => {
-//   //     // truncation.value.textContent = truncationText;
-//   //     console.log('object');
-//   //   };
-//   //   console.log(truncationText.length > 83);
-//   //   почему то переменную оно не воспринимает
-//   //   console.log(window.innerWidth);
-//   //   вроде норм но надо перезагружать чтобы условие работало так как произошел рендер и window.innerWidth не меняется
-//   // и оно может и не надо так как пользователь не должен менять разрешения своего экрана
-//   if (window.innerWidth < 768) {
-//     // r(truncation.value.textContent);
-//     console.log(truncation.value.textContent);
-//     // truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : truncationText;
-//     truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : r(truncationText);
-//     // showMoreText();
-//   }
-//   //   console.log(e, truncation.value.textContent);
-//   //   r(truncation.value.textContent);
-//   //   truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : truncationText;
-//   // элемент DOM будет определён в ref после первоначальной отрисовки
-//   //   console.log(truncation.value.textContent);
-//   //   var str = truncation.value.textContent.slice(0, 83); //например макс 100 символов
-//   //   var a = str.split(' ');
-//   //   console.log(a);
-//   //   a.splice(a.length - 1, 1);
-//   //   str = a.join(' ');
-//   //   //   console.log(str);
-//   //   truncation = truncation.value.textContent = str + '...';
-//   //   return truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 83)}…` : truncation.value.textContent;
-//   //   console.log(truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent);
-//   //   truncation.value.textContent = str + '...';
-//   //   truncation.value.textContent = truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent;
-
-//   // created () {
-//   //     console.log(window.innerWidth)
-//   // }
-// });
-// watch: {
-//         screenwidth(n, l) {
-//             console.log(n)
-//         }
-//     }
-
-// var str = truncation.value.textContent.slice(0, 100); //например макс 100 символов
-// var a = str.split(' ');
-// a.splice(a.length - 1, 1);
-
-// console.log(truncation.value);
-// var text = 'много много текстов ...';
-// var str = text.slice(0, 100); //например макс 100 символов
-// var a = str.split(' ');
-// a.splice(a.length - 1, 1);
-// str = a.join(' ');
 </script>

@@ -147,5 +147,10 @@
 
     color: #1d1d1b;
     text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #73de6d;
+    }
   }
 }

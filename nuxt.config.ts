@@ -8,6 +8,7 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&display=swap',
         },
+        { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
       ],
 
       script: [
