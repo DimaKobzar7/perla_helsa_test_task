@@ -15,7 +15,9 @@
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-      <p ref="truncation" class="nav-tabs-text">Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.</p>
+      <!-- <p ref="truncation" class="nav-tabs-text">Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.</p> -->
+      <p ref="truncation" class="nav-tabs-text">{{ truncationText }}</p>
+      <span ref="showMore" class="nav-tabs-info" @click="showMoreText">Дізнатись більше</span>
     </div>
     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
       <ul class="nav-tabs-list">
@@ -39,61 +41,100 @@
 </template>
 
 <script setup>
-let truncation = ref(null);
+let showMore = ref(null);
+let truncationText = ref("Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.");
+console.log(truncationText.value);
 // обрезка через сss https://nikolaus.by/blog/vyerstka/mnogotochie-v-kontse-stroki-na-css/
 // let screenwidth = ref(window.innerWidth);
 // console.log(screenwidth);
+let baseText = truncationText.value;
+
+const showMoreText = () => {
+  //   console.log('gg');
+  truncationText.value = baseText;
+  //   console.log(truncation.value);
+  showMore.value.style.display = 'none';
+};
+
+// тут просто ивент передаеться а не параметры
+// const showMoreText = () => {
+//   //   console.log(rr);
+//   truncation = test;
+//   console.log('object');
+// };
 
 onMounted(() => {
-  //   const obj = reactive({
-  //     prop1: window.innerWidth,
-  //     prop2: 'prop2',
-  //   });
-  //   watch(
-  //     () => obj.prop1,
-  //     (prop1, prevProp1) => {
-  //       console.log('#######');
-  //       console.log('Lets watch:');
-  //       console.group();
-  //       console.log('obj.prop1: ' + prop1);
-  //       console.log('Old prop1: ' + prevProp1);
-  //       console.groupEnd();
-  //       console.group();
-  //       console.log('Prop2: ' + obj.prop2);
-  //       console.groupEnd();
-  //       console.log('End watch.');
-  //       console.log('#######');
-  //     }
-  //   );
-  //   console.log(screenwidth);
-  let truncationText = truncation.value.textContent;
-  //   console.log(truncationText.length > 83);
-  //   почему то переменную оно не воспринимает
-  //   console.log(window.innerWidth);
-  //   вроде норм но надо перезагружать чтобы условие работало так как произошел рендер и window.innerWidth не меняется
-  // и оно может и не надо так как пользователь не должен менять разрешения своего экрана
   if (window.innerWidth < 768) {
-    truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : truncationText;
+    truncationText.value = truncationText.value.length > 83 ? `${truncationText.value.slice(0, 81)}…` : truncationText;
+    // console.log(truncationText.value.slice(0, 81));
+    // console.log(truncationText.value.slice(0, 81));
+    // console.log(r);
   }
-  //   truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : truncationText;
-  // элемент DOM будет определён в ref после первоначальной отрисовки
-  //   console.log(truncation.value.textContent);
-  //   var str = truncation.value.textContent.slice(0, 83); //например макс 100 символов
-  //   var a = str.split(' ');
-  //   console.log(a);
-  //   a.splice(a.length - 1, 1);
-  //   str = a.join(' ');
-  //   //   console.log(str);
-  //   truncation = truncation.value.textContent = str + '...';
-  //   return truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 83)}…` : truncation.value.textContent;
-  //   console.log(truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent);
-  //   truncation.value.textContent = str + '...';
-  //   truncation.value.textContent = truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent;
-
-  // created () {
-  //     console.log(window.innerWidth)
-  // }
 });
+
+// console.log(t);
+// onMounted(() => {
+//   //   const obj = reactive({
+//   //     prop1: window.innerWidth,
+//   //     prop2: 'prop2',
+//   //   });
+//   //   watch(
+//   //     () => obj.prop1,
+//   //     (prop1, prevProp1) => {
+//   //       console.log('#######');
+//   //       console.log('Lets watch:');
+//   //       console.group();
+//   //       console.log('obj.prop1: ' + prop1);
+//   //       console.log('Old prop1: ' + prevProp1);
+//   //       console.groupEnd();
+//   //       console.group();
+//   //       console.log('Prop2: ' + obj.prop2);
+//   //       console.groupEnd();
+//   //       console.log('End watch.');
+//   //       console.log('#######');
+//   //     }
+//   //   );
+//   //   console.log(screenwidth);
+//   let truncationText = truncation.value.textContent;
+//   let r = showMoreText;
+//   //   console.log(r);
+//   //   const showMoreText = () => {
+//   //     // truncation.value.textContent = truncationText;
+//   //     console.log('object');
+//   //   };
+//   //   console.log(truncationText.length > 83);
+//   //   почему то переменную оно не воспринимает
+//   //   console.log(window.innerWidth);
+//   //   вроде норм но надо перезагружать чтобы условие работало так как произошел рендер и window.innerWidth не меняется
+//   // и оно может и не надо так как пользователь не должен менять разрешения своего экрана
+//   if (window.innerWidth < 768) {
+//     // r(truncation.value.textContent);
+//     console.log(truncation.value.textContent);
+//     // truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : truncationText;
+//     truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : r(truncationText);
+//     // showMoreText();
+//   }
+//   //   console.log(e, truncation.value.textContent);
+//   //   r(truncation.value.textContent);
+//   //   truncation.value.textContent = truncationText.length > 83 ? `${truncationText.slice(0, 81)}…` : truncationText;
+//   // элемент DOM будет определён в ref после первоначальной отрисовки
+//   //   console.log(truncation.value.textContent);
+//   //   var str = truncation.value.textContent.slice(0, 83); //например макс 100 символов
+//   //   var a = str.split(' ');
+//   //   console.log(a);
+//   //   a.splice(a.length - 1, 1);
+//   //   str = a.join(' ');
+//   //   //   console.log(str);
+//   //   truncation = truncation.value.textContent = str + '...';
+//   //   return truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 83)}…` : truncation.value.textContent;
+//   //   console.log(truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent);
+//   //   truncation.value.textContent = str + '...';
+//   //   truncation.value.textContent = truncation.value.textContent.length > 83 ? `${truncation.value.textContent.slice(0, 81)}…` : truncation.value.textContent;
+
+//   // created () {
+//   //     console.log(window.innerWidth)
+//   // }
+// });
 // watch: {
 //         screenwidth(n, l) {
 //             console.log(n)

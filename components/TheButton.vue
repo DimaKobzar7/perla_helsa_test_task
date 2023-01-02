@@ -11,7 +11,7 @@ const props = defineProps(['currentPrice']);
 
 let test = ref('До кошика');
 
-console.log(props);
+// console.log(props);
 onMounted(() => {
   if (window.innerWidth < 768) {
     test.value += ' - ' + props.currentPrice;

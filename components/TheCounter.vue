@@ -20,8 +20,8 @@
 <script setup>
 const { count, plus, minus, inputChange } = inject('msgKey');
 
-console.log(count);
-console.log(count.value);
+// console.log(count);
+// console.log(count.value);
 
 // рабочая куча пропсная версия
 // const props = defineProps(['count', 'plus', 'minus', 'inputChange']);
