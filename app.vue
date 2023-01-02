@@ -51,7 +51,7 @@ const testFunc = ref(0);
 const count = ref(1);
 
 // походу эти методы должны будут принимать значение велью
-const plus = (event) => {
+const plus = () => {
   //   console.log(event.target.value, count.value);
 
   if (count.value >= 99) {
@@ -91,9 +91,36 @@ let testCartNum = ref(0);
 // let savedCount = count.value;
 
 // watchEffect((t) => console.log(count.value, t));
-let savedCount = 0;
+// let savedCount = 0;
+let savedCount = ref(0);
+
+// watch(count, (count, prevCount) => {
+//   console.log(count, prevCount);
+//   // if (count != prevCount) {
+//   //   savedCount = prevCount;
+//   // }
+//   //   savedCount = prevCount;
+// });
+
+//   watchEffect(() => {
+//     console.log(count.value);
+//     // let r = count.value;
+//     // savedCount = count.value;
+//     savedCount = r;
+//   });
 // console.log(savedCount);
+// savedCount = count.value;
 const setCartTriger = () => {
+  // 115 и 116 синхронизировали значения с карзиной и счетчиком но теперь нажатие кнопки увеличивает счетчик
+//   count.value++;
+//   savedCount = count.value;
+
+    savedCount.value = count.value;
+
+  // тест выше
+  //   console.log(object);
+  // savedCount++
+  // savedCount--
   //   if (cartTriger.value === true) {
   //     console.log('gg');
   //   }
@@ -110,14 +137,14 @@ const setCartTriger = () => {
   //     //   savedCount = prevCount;
   //     // }
   //   });
-  onMounted(() => {
-    if (localStorage.count) {
-      count = localStorage.count;
-    }
-    watch(count, (count, prevCount) => {
-      localStorage.count = count;
-    });
-  });
+  //   onMounted(() => {
+  //     if (localStorage.count) {
+  //       count = localStorage.count;
+  //     }
+  //     watch(count, (count, prevCount) => {
+  //       localStorage.count = count;
+  //     });
+  //   });
   // mounted() {
   //     if (localStorage.name) {
   //       this.name = localStorage.name;
