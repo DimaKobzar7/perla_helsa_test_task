@@ -25,6 +25,10 @@
       width: 24px;
       height: 24px;
     }
+
+    &-group {
+      display: flex;
+    }
   }
 
   &__logo {
@@ -54,13 +58,29 @@
     }
   }
 
+  &__phone {
+    order: 0;
+
+    @include onTablet {
+      order: 1;
+
+      margin-left: 33px;
+    }
+
+    @include onDesktop {
+      order: 0;
+      margin: 0;
+    }
+  }
+
   &__cart {
     position: relative;
     display: inline-block;
     margin-left: 12px;
 
     @include onTablet {
-      margin-left: 33px;
+      //   margin-left: 33px;
+      margin-left: 0;
     }
 
     @include onDesktop {

@@ -24,7 +24,7 @@ import "../assets/custom/utils/_mixins.scss";
         <div class="header__icon-group">
           <!-- тут нужно тип для телефона загнать типо мейл ту -->
           <!-- и если его оставлять то надо поставить на ссылку размер и маржин -->
-          <NuxtLink to="#">
+          <NuxtLink class="header__phone" to="#">
             <img class="header__icon" src="../assets/svg/phone.svg" />
           </NuxtLink>
 
