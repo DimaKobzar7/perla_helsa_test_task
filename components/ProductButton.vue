@@ -1,17 +1,17 @@
 <template>
-  <button class="btn btn--success" @click="setCartTriger">{{ btnText }}</button>
+  <button class="btn btn--success" @click="setCartTrigger">{{ btnText }}</button>
 </template>
 
 <script setup>
-const props = defineProps(["currentPrice"]);
+const props = defineProps(['currentPrice']);
 
-const { setCartTriger } = inject("msgKey");
+const { setCartTrigger } = inject('store');
 
-let btnText = ref("До кошика");
+let btnText = ref('До кошика');
 
 onMounted(() => {
   if (window.innerWidth < 768) {
-    btnText.value += " - " + props.currentPrice;
+    btnText.value += ' - ' + props.currentPrice;
   }
 });
 </script>

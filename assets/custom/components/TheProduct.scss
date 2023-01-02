@@ -58,8 +58,6 @@
 
   &__inner {
     display: block;
-    // flex-direction: column;
-    // justify-content: space-between;
 
     margin-bottom: 24px;
 
@@ -68,7 +66,6 @@
 
       justify-content: space-between;
       align-items: center;
-      //   flex-direction: row;
 
       margin-bottom: 32px;
     }
@@ -78,8 +75,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // margin-bottom: 40px;
 
     @include onTablet {
       justify-content: space-between;
@@ -93,15 +88,19 @@
 
   &__icon-wrap {
     display: flex;
-    // margin-bottom: 64px;
   }
 
-  //   test
-  &__mt-3 {
+  &__hide-content {
+    display: flex;
+    justify-content: center;
+
     margin-top: 32px;
+
+    @include onTablet {
+      display: none;
+    }
   }
 
-  //не по центру надо а немного в бок иконку   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   &__icon {
     margin-right: 26px;
     width: 37px;

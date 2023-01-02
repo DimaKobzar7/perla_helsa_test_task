@@ -5,32 +5,19 @@
         <div class="col-xxl-6 order-xxl-0 order-1">
           <div class="product">
             <div class="product__inner">
-              <h1 class="product__title">
-                Омега-3 <span class="product__subtitle">Тріска</span>
-              </h1>
-
+              <h1 class="product__title">Омега-3 <span class="product__subtitle">Тріска</span></h1>
               <div class="product__badge">з вітамінами А і D3</div>
             </div>
+
             <ProductTabs />
+
             <div class="product__info">
               <div class="d-none d-md-flex">
-                <img
-                  class="product__icon"
-                  src="../assets/svg/drug-green.svg"
-                  alt=""
-                />
+                <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
                 <div>
                   <h5 class="product__instruction mb-1">В упаковці:</h5>
-                  <p
-                    class="product__instruction product__instruction--standard mb-1"
-                  >
-                    120 капсул по 500 мг
-                  </p>
-                  <p
-                    class="product__instruction product__instruction--disabled"
-                  >
-                    1 місяць прийому
-                  </p>
+                  <p class="product__instruction product__instruction--standard mb-1">120 капсул по 500 мг</p>
+                  <p class="product__instruction product__instruction--disabled">1 місяць прийому</p>
                 </div>
               </div>
               <div class="product__price">
@@ -40,38 +27,24 @@
             </div>
             <div class="row align-items-center">
               <div class="col-md-5 col-xxl-4">
-                <TheCounter />
+                <ProductCounter />
               </div>
               <div class="col-md-7 col-xxl-8">
                 <ProductButton :currentPrice="currentPrice" />
               </div>
-              <div
-                class="d-flex justify-content-center d-md-none product__mt-3"
-              >
-                <img
-                  class="product__icon"
-                  src="../assets/svg/drug-green.svg"
-                  alt=""
-                />
+              <div class="product__hide-content">
+                <img class="product__icon" src="../assets/svg/drug-green.svg" alt="" />
                 <div>
                   <h5 class="product__instruction mb-1">В упаковці:</h5>
-                  <p
-                    class="product__instruction product__instruction--standard mb-1"
-                  >
-                    120 капсул по 500 мг
-                  </p>
-                  <p
-                    class="product__instruction product__instruction--disabled"
-                  >
-                    1 місяць прийому
-                  </p>
+                  <p class="product__instruction product__instruction--standard mb-1">120 капсул по 500 мг</p>
+                  <p class="product__instruction product__instruction--disabled">1 місяць прийому</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-xxl-6">
-          <TheSwiper />
+          <ProductSwiper />
         </div>
       </div>
     </div>
@@ -79,5 +52,5 @@
 </template>
 
 <script setup>
-const currentPrice = "489 ₴";
+const currentPrice = '489 ₴';
 </script>

@@ -1,37 +1,37 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
 
-@import "assets/custom/utils/variables.scss";
+@import 'assets/custom/utils/variables.scss';
 
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
 
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/utilities/api";
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/utilities/api';
 
-@import "../node_modules/bootstrap/scss/card";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/forms";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/reboot";
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/reboot';
 
-@import "../node_modules/swiper/swiper.scss";
-@import "../node_modules/swiper/modules/navigation/navigation.scss";
+@import '../node_modules/swiper/swiper.scss';
+@import '../node_modules/swiper/modules/navigation/navigation.scss';
 
-@import "assets/custom/utils/mixins";
-@import "assets/custom/components/TheHeader.scss";
-@import "assets/custom/components/ProductButton.scss";
-@import "assets/custom/components/TheCap.scss";
-@import "assets/custom/components/TheProduct.scss";
-@import "assets/custom/components/TheCounter.scss";
-@import "assets/custom/components/TheDelivery.scss";
-@import "assets/custom/components/General.scss";
-@import "assets/custom/components/Container.scss";
-@import "assets/custom/components/Section.scss";
-@import "assets/custom/components/ProductTabs.scss";
-@import "assets/custom/components/ProductTable.scss";
-@import "assets/custom/components/TheSwiper.scss";
+@import 'assets/custom/utils/mixins';
+@import 'assets/custom/components/TheHeader.scss';
+@import 'assets/custom/components/ProductButton.scss';
+@import 'assets/custom/components/TheCap.scss';
+@import 'assets/custom/components/TheProduct.scss';
+@import 'assets/custom/components/ProductCounter.scss';
+@import 'assets/custom/components/ProductDelivery.scss';
+@import 'assets/custom/components/General.scss';
+@import 'assets/custom/components/Container.scss';
+@import 'assets/custom/components/Section.scss';
+@import 'assets/custom/components/ProductTabs.scss';
+@import 'assets/custom/components/ProductTable.scss';
+@import 'assets/custom/components/ProductSwiper.scss';
 
-@import "assets/fonts/fonts.scss";
-@import "assets/custom/utils/reset";
+@import 'assets/fonts/fonts.scss';
+@import 'assets/custom/utils/reset';

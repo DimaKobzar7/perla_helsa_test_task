@@ -1,8 +1,8 @@
 .btn {
-  //   display: none;
   padding: 15px 0 14px;
 
   width: 100%;
+
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
@@ -16,10 +16,6 @@
   outline: none;
 
   border: none;
-
-  //   @include onTablet {
-  //     display: block;
-  //   }
 
   &--success {
     background-color: #69c522;

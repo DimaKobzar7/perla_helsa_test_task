@@ -1,10 +1,7 @@
-// работает
 .swiper {
-  // position: fixed;
   &-slide {
     display: flex;
     justify-content: center;
-    // justify-content: flex-end;
 
     @include onDesktop {
       justify-content: flex-end;
@@ -21,12 +18,10 @@
       user-select: none;
 
       @include onTablet {
-        //   max-width: 344px;
         width: 396px;
       }
 
       @include onDesktop {
-        //   max-width: 344px;
         width: 746px;
       }
     }
@@ -40,11 +35,8 @@
     height: 46px;
 
     @include onDesktop {
-      // top: 100%;
       top: 95%;
 
-      // width: 22px;
-      // height: 16px;
       width: 40px;
       height: 40px;
     }
@@ -65,8 +57,8 @@
     }
 
     left: 10px;
+
     @include onDesktop {
-      // left: 85%;
       left: 83%;
     }
   }
@@ -83,53 +75,3 @@
     }
   }
 }
-
-// .swiper-button-prev,
-// .swiper-button-next {
-//   top: 40%;
-
-//   width: 46px;
-
-//   @include onDesktop {
-//     // top: 100%;
-//     top: 95%;
-
-//     // width: 22px;
-//     // height: 16px;
-//     width: 40px;
-//     height: 40px;
-//   }
-
-//   svg {
-//     fill: #00284f;
-//     transition: fill 0.3s;
-
-//     &:hover {
-//       fill: #69c522;
-//     }
-//   }
-// }
-// .swiper-button-prev,
-// .swiper-rtl .swiper-button-next {
-//   &:after {
-//     content: '';
-//   }
-
-//   left: 10px;
-//   @include onDesktop {
-//     // left: 85%;
-//     left: 83%;
-//   }
-// }
-// .swiper-button-next,
-// .swiper-rtl .swiper-button-prev {
-//   &:after {
-//     content: '';
-//   }
-
-//   right: 10px;
-
-//   @include onDesktop {
-//     right: 0;
-//   }
-// }

@@ -24,29 +24,25 @@
   &__item {
     display: flex;
     align-items: center;
-    // max-width: 344px;
 
     @include onTablet {
       flex-direction: column;
     }
 
     @include onDesktop {
-      //   max-width: 344px;
       flex-direction: row;
     }
   }
 
   &__icon {
     margin-right: 45px;
+
     width: 54px;
-    // height: 54px;
     height: 36px;
 
     @include onTablet {
       margin-right: 0px;
       margin-bottom: 24px;
-      //   width: 56px;
-      //   height: 36px;
     }
 
     @include onDesktop {

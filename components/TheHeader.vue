@@ -4,10 +4,7 @@
       <div class="header__top">
         <div class="header__icon-group">
           <NuxtLink to="#">
-            <img
-              class="header__icon header__burger-menu"
-              src="../assets/svg/burger-menu.svg"
-            />
+            <img class="header__icon header__burger-menu" src="../assets/svg/burger-menu.svg" />
           </NuxtLink>
 
           <NuxtLink to="#">
@@ -24,8 +21,8 @@
 
           <NuxtLink class="header__cart" to="#">
             <img class="header__icon" src="../assets/svg/cart.svg" />
-            <div class="header__cart-counter" v-if="savedCount">
-              {{ savedCount }}
+            <div class="header__cart-counter" v-if="cartAmount">
+              {{ cartAmount }}
             </div>
           </NuxtLink>
         </div>
@@ -43,5 +40,5 @@
 </template>
 
 <script setup>
-const props = defineProps(["count", "cartTriger", "savedCount"]);
+const props = defineProps(['cartAmount']);
 </script>
