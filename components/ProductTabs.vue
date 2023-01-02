@@ -16,6 +16,7 @@
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
       <!-- <p ref="truncation" class="nav-tabs-text">Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.</p> -->
+      <!-- <p ref="truncation" class="nav-tabs-text">{{ truncationText }}</p> -->
       <p ref="truncation" class="nav-tabs-text">{{ truncationText }}</p>
       <span ref="showMore" class="nav-tabs-info" @click="showMoreText">Дізнатись більше</span>
     </div>
@@ -70,7 +71,17 @@ onMounted(() => {
     // console.log(truncationText.value.slice(0, 81));
     // console.log(r);
   }
+  //   watch(window.innerWidth, (count, prevCount) => {
+  //       console.log(count, prevCount);
+  //       // if (count != prevCount) {
+  //       //   savedCount = prevCount;
+  //       // }
+  //     });
 });
+
+// watchEffect(() => {
+//   console.log(window.innerWidth);
+// });
 
 // console.log(t);
 // onMounted(() => {
