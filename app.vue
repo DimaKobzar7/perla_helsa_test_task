@@ -110,13 +110,38 @@ let savedCount = ref(0);
 //   });
 // console.log(savedCount);
 // savedCount = count.value;
+
+// onMounted(() => {
+//   if (window.innerWidth < 768) {
+//     savedCount.value++;
+//     console.log('object');
+//   }
+// });
 const setCartTriger = () => {
   // 115 и 116 синхронизировали значения с карзиной и счетчиком но теперь нажатие кнопки увеличивает счетчик
-//   count.value++;
-//   savedCount = count.value;
+  //   count.value++;
+  //   savedCount = count.value;
 
+  //   savedCount.value = count.value;
+  //   onMounted(() => {
+  //     if (window.innerWidth < 768) {
+  //       savedCount.value++;
+  //       console.log('object');
+  //     }
+  //   });
+
+
+  if (window.innerWidth < 768) {
+    savedCount.value++;
+    console.log(savedCount.value);
+    count.value = savedCount.value
+    // console.log('object');
+    console.log(window.innerWidth);
+  } else {
     savedCount.value = count.value;
+  }
 
+  //   console.log(window.innerWidth);
   // тест выше
   //   console.log(object);
   // savedCount++
