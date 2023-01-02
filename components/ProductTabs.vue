@@ -43,7 +43,7 @@
 <script setup>
 let showMore = ref(null);
 let truncationText = ref("Комплекс EPA + DHA кислот і натуральних вітамінів А & D3 для здоров'я твоєї шкіри, волосся, зору, сну, міцних кісток, суглобів та імунітету.");
-console.log(truncationText.value);
+// console.log(truncationText.value);
 // обрезка через сss https://nikolaus.by/blog/vyerstka/mnogotochie-v-kontse-stroki-na-css/
 // let screenwidth = ref(window.innerWidth);
 // console.log(screenwidth);

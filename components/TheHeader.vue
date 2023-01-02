@@ -30,7 +30,11 @@ import "../assets/custom/utils/_mixins.scss";
 
           <NuxtLink class="header__cart" to="#">
             <img class="header__icon" src="../assets/svg/cart.svg" />
-            <div class="header__cart-counter">{{ props.count }}</div>
+            <!-- <div class="header__cart-counter">{{ props.count }}</div> -->
+            <!-- <div class="header__cart-counter">{{ props.count < 2 ? startValue : props.count }}</div> -->
+            <!-- <div class="header__cart-counter">{{ props.cartTriger ? props.count : 0 }}</div> -->
+            <div class="header__cart-counter">{{ savedCount }}</div>
+            <p>{{ props.cartTriger }}</p>
           </NuxtLink>
         </div>
       </div>
@@ -47,7 +51,10 @@ import "../assets/custom/utils/_mixins.scss";
 </template>
 
 <script setup>
-const props = defineProps(['count']);
+const props = defineProps(['count', 'cartTriger', 'savedCount']);
+// console.log(props.cartTriger);
+let startValue = ref(0);
+let t2 = ref(2);
 
 // console.log('It`s Header', props);
 </script>

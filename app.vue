@@ -29,7 +29,7 @@
     <!-- <div class="container"> -->
     <!-- <NuxtWelcome /> -->
     <!-- наверное как пропс оставлю покажу что я и просты пропсы знаю -->
-    <TheHeader :count="count" />
+    <TheHeader :count="count" :cartTriger="cartTriger" :savedCount="savedCount" />
     <TheProduct />
     <TheDelivery />
     <!-- </div> -->
@@ -52,7 +52,7 @@ const count = ref(1);
 
 // походу эти методы должны будут принимать значение велью
 const plus = (event) => {
-  console.log(event.target.value, count.value);
+  //   console.log(event.target.value, count.value);
 
   if (count.value >= 99) {
     //   event.target.value = count.value;
@@ -81,6 +81,26 @@ const inputChange = (event) => {
   count.value = +event.target.value;
 };
 
+const cartTriger = ref(false);
+let testCartNum = ref(0);
+
+let savedCount = count.value;
+console.log(savedCount);
+const setCartTriger = () => {
+  //   if (cartTriger.value === true) {
+  //     console.log('gg');
+  //   }
+  cartTriger.value = true;
+  //   cartTriger.value = !cartTriger.value;
+  if (count.value !== savedCount) {
+    console.log('gg');
+    // testCartNum.value = count.value
+    savedCount = count.value;
+  }
+
+  console.log('cart triger');
+};
+
 // const msg = ref('Hello World!');
 // const updateMsg = (newValue) => (msg.value = newValue);
 provide('msgKey', {
@@ -88,6 +108,8 @@ provide('msgKey', {
   plus,
   minus,
   inputChange,
+  cartTriger,
+  setCartTriger,
 });
 
 // метод нажимается в длчернем компоненте но перерендер не происходит и изменение значения

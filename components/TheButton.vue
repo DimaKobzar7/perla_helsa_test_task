@@ -3,11 +3,13 @@
   <!-- возмможно придется просто взять класс бутстрапа и его переделать -->
   <!-- <button class="btn btn--success">До кошика</button> -->
   <!-- <button class="btn btn--success">{{ window.innerWidth < 768 ? props.currentPrice : `До кошика -` + props.currentPrice }}</button> -->
-  <button class="btn btn--success">{{ test }}</button>
+  <button class="btn btn--success" @click="setCartTriger">{{ test }}</button>
 </template>
 
 <script setup>
 const props = defineProps(['currentPrice']);
+
+const { setCartTriger } = inject('msgKey');
 
 let test = ref('До кошика');
 
