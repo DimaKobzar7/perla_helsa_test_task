@@ -84,19 +84,60 @@ const inputChange = (event) => {
 const cartTriger = ref(false);
 let testCartNum = ref(0);
 
-let savedCount = count.value;
-console.log(savedCount);
+// watch(count, (count, prevCount) => {
+//   console.log( count,  prevCount);
+// })
+
+// let savedCount = count.value;
+
+// watchEffect((t) => console.log(count.value, t));
+let savedCount = 0;
+// console.log(savedCount);
 const setCartTriger = () => {
   //   if (cartTriger.value === true) {
   //     console.log('gg');
   //   }
+  //   let r = count.value;
+  //   watchEffect(() => {
+  //     console.log(count.value);
+  //     // let r = count.value;
+  //     // savedCount = count.value;
+  //     savedCount = r;
+  //   });
+  //   watch(count, (count, prevCount) => {
+  //     console.log(count, prevCount);
+  //     // if (count != prevCount) {
+  //     //   savedCount = prevCount;
+  //     // }
+  //   });
+  onMounted(() => {
+    if (localStorage.count) {
+      count = localStorage.count;
+    }
+    watch(count, (count, prevCount) => {
+      localStorage.count = count;
+    });
+  });
+  // mounted() {
+  //     if (localStorage.name) {
+  //       this.name = localStorage.name;
+  //     }
+  //   },
+  //   watch: {
+  //     name(newName) {
+  //       localStorage.name = newName;
+  //     }
+  //   }
+
   cartTriger.value = true;
   //   cartTriger.value = !cartTriger.value;
-  if (count.value !== savedCount) {
-    console.log('gg');
-    // testCartNum.value = count.value
-    savedCount = count.value;
-  }
+  //   console.log(savedCount - 1);
+  //   console.log(savedCount - 1);
+  //   if (count.value !== savedCount) {
+  //     console.log('gg');
+  //     // testCartNum.value = count.value
+  //     savedCount = count.value;
+  //   }
 
   console.log('cart triger');
 };
